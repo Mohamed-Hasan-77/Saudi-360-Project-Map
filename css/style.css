@@ -1,0 +1,1075 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+/*--------------------------------------------------------------
+theme Colors 
+*/
+:root {
+
+
+    --mainBlue: linear-gradient(to right, #2284d3ed 0%, #20ddfd92 100%);
+
+    --mainBackgroundGray: radial-gradient(circle, rgba(238, 238, 238, 1) 0%, rgba(245, 245, 245, 1) 51%, rgba(249, 249, 249, 1) 100%, rgba(252, 252, 252, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    /* --mainBackgroundGray: rgb(18 18 18); */
+
+    --mainBack: linear-gradient(to bottom, #ff57229e 0%, #d7800094 100%);
+    --mainBackCards: linear-gradient(to right, #ff5722eb 0%, #e79720a6 100%);
+}
+
+/*
+
+# General
+--------------------------------------------------------------*/
+
+
+* {
+    /* font-family: 'Tajawal', sans-serif; */
+    font-family: 'Anton', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+html {
+    overflow-x: hidden;
+}
+
+
+
+.sectionTitle {
+    margin: 70px auto 50px;
+    position: relative;
+    text-align: center;
+
+}
+
+.sectionTitle h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    /* border-left: 5px solid #ff5622e8; */
+    /* padding-left: 15px; */
+}
+
+.sectionTitle .tilteBorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTitle span {
+    display: inline-block;
+    height: 4px;
+    width: 45px;
+    margin: 0 4px;
+    background: #FF9800;
+}
+
+.sectionTitle span:nth-of-type(2) {
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    background-color: #2196F3;
+}
+
+
+
+
+@media(max-width: 768px) {
+    .sectionTitle h2 {
+        font-size: 40px;
+    }
+}
+
+
+.mBorderR {
+    border-radius: 40px;
+}
+
+.mShadow {
+    box-shadow: 0 4px 14px rgb(0 0 0 / 50%);
+
+}
+
+
+/* ------------------------ banner  */
+
+
+.banner {
+    padding: 0px;
+    background-color: var(--mainBackgroundGray);
+    height: 70vh;
+
+}
+
+
+
+.backgroundMap {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.backgroundMap .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px) brightness(0.5);
+}
+
+.banner .header {
+    /* background-image: linear-gradient(to bottom, rgb(87 34 0 / 28%), rgb(0 0 0 / 28%)), url(../images/globe-1029209_1920.jpg); */
+    background-image: url(../images/u0.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 10px;
+    height: 50%;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner .soudiLogo {
+    width: 150px;
+    top: 15px;
+    right: 15px;
+}
+
+.banner .bannrTitle {
+    padding: 30px 50px;
+    border-radius: 14px;
+    background-color: #93939314;
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 0px 31px -12px black;
+    width: 50%;
+}
+
+.banner .bannrTitle h2 {
+
+    border-left: 5px solid #ff5622e8;
+    padding-left: 15px;
+}
+
+
+.banner .bannrTitle p:first-of-type {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.headerImg {
+    width: 40%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/globe-1029209_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 80px;
+}
+
+@media(max-width: 768px) {
+
+    .banner {
+        height: 55vh;
+    }
+
+    .banner .header {
+        align-items: flex-end;
+    }
+
+    .banner .bannrTitle {
+        padding: 10px;
+        border-radius: 14px;
+        width: 300px;
+    }
+
+    .banner .bannrTitle h2 {
+        font-size: 20px;
+    }
+
+    .banner .bannrTitle p:first-of-type {
+        font-size: 14px;
+    }
+}
+
+
+/* ------------------------ map  */
+
+
+.map {
+    background: rgb(217, 217, 217);
+    background: var(--mainBackgroundGray);
+    padding: 50px 50px 30px;
+    background-image: url(../images/sand-paper.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.map .mapImage {
+    border-radius: 40px;
+}
+
+.map .container {
+    box-shadow: 0 4px 14px rgb(0 0 0 / 40%);
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+
+}
+
+.mapTitle {
+    position: absolute;
+    right: 20px;
+    font-size: 60px;
+    font-weight: 800;
+    top: 100px;
+    color: #a17443;
+    text-shadow: -4px 3px black;
+}
+
+@media(max-width: 768px) {
+
+
+    .mapTitle {
+        right: 18px;
+        font-size: 50px;
+        top: 45px;
+        text-shadow: -4px 3px black;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .map {
+        padding: 15px;
+        height: 40vh;
+    }
+
+    .map .container {
+        height: 100%;
+        padding: 0;
+    }
+
+    .map .container img {
+        height: 100%;
+    }
+
+    .mapTitle {
+        right: 25px;
+        top: 22px;
+        font-size: 25px;
+        text-shadow: -1px 2px black;
+    }
+}
+
+.locationOne {
+
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(52, 52, 52);
+}
+
+.Two {
+    top: 60%;
+    left: 60%;
+}
+
+
+.Three {
+    top: 30%;
+    left: 30%;
+}
+
+/* .pulse {
+    height: 55px;
+    width: 55px;
+    animation: 1.5s pulse infinite ease-in-out;
+    border-radius: 50%;
+    background-color: #cecece;
+    transform: rotateX(70deg);
+    margin-top: -35px;
+    z-index: 1;
+
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0px 0px #d3d3d3;
+    }
+
+    100% {
+        box-shadow: 0 0 0 14px #2d2d2d00;
+    }
+} */
+
+
+
+
+
+.locate {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.locate::after {
+    content: '';
+    width: 35px;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 50% 0;
+    border: 10px solid red;
+    transform: rotate(45deg) translate(0, 0);
+    box-sizing: border-box;
+    animation: animMarker 1s ease-in-out infinite alternate;
+}
+
+.locate::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 150%;
+    width: 24px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    animation: animShadow 1s ease-in-out infinite alternate;
+}
+
+@keyframes animMarker {
+    0% {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+}
+
+@keyframes animShadow {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+/* Know Section  */
+
+.knowCards {
+    background: rgb(217, 217, 217);
+    background: var(--mainBackgroundGray);
+    padding: 20px 0 50px;
+    overflow: hidden;
+
+    background-image: url(../images/back.png);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+@media(max-width: 768px) {
+    .knowCards {
+        background-position: right;
+    }
+}
+
+.KnowCard {
+    position: relative;
+    background-color: #f7f7f7;
+    background: rgb(217, 217, 217);
+    background: radial-gradient(circle, rgb(237 237 237) 0%, rgba(249, 249, 249, 1) 100%, rgba(252, 252, 252, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+
+.KnowCard .patternTwo {
+    right: -50%;
+}
+
+
+
+
+/* black  */
+
+/* .KnowCard {
+    position: relative;
+    z-index: 2;
+    background-color: inherit;
+    -webkit-box-shadow: 0 4px 35px rgba(0, 0, 0, .1);
+    box-shadow: 2px 0px 6px rgb(255 255 255 / 12%) inset, 26px 17px 45px -27px black;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+
+
+.card1 {
+    display: block;
+    position: relative;
+    width: 105%;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding: 0px 20px;
+    padding-top: 8px;
+    margin-top: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 0px black;
+} */
+/* black  */
+
+
+
+
+.card-content {
+    padding: 20px 20px 5px;
+}
+
+.KnowCard:hover {
+    transform: rotateY(10deg) rotateX(10deg) scale(0.97);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.cardMore p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+}
+
+.cardMore p.small {
+    font-size: 14px;
+}
+
+.go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    overflow: hidden;
+    top: 0;
+    right: 8px;
+    background-color: var(--mainBackCards);
+    border-radius: 0 4px 0 32px;
+}
+
+.go-arrow {
+    margin-top: -10px;
+    margin-right: 9px;
+    color: white;
+    font-family: courier, sans;
+}
+
+.card1 {
+    display: block;
+    position: relative;
+    width: 105%;
+    background-color: #efefef;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding: 0px 20px;
+    padding-top: 8px;
+    margin-top: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 0px #cfcfcf;
+}
+
+.card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: var(--mainBackCards);
+    height: 32px;
+    width: 65px;
+    padding: 23px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.4s ease-out;
+}
+
+.card1:hover:before {
+    transform: scale(21);
+}
+
+.card1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+}
+
+.card1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+}
+
+.card2 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+}
+
+.card2:hover {
+    transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.card2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: var(--mainBackCards);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(2);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s ease-out;
+}
+
+.card2:hover:before {
+    transform: scale(2.15);
+}
+
+.card3 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #f2f8f9;
+}
+
+.card3 .go-corner {
+    opacity: 0.7;
+}
+
+.card3:hover {
+    border: 1px solid var(--mainBackCards);
+    box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+    z-index: 500;
+}
+
+.card3:hover p {
+    color: var(--mainBackCards);
+}
+
+.card3:hover .go-corner {
+    transition: opactiy 0.3s linear;
+    opacity: 1;
+}
+
+.card4 {
+    display: block;
+    top: 0px;
+    position: relative;
+    max-width: 262px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.card4 .go-corner {
+    background-color: var(--mainBackCards);
+    height: 100%;
+    width: 16px;
+    padding-right: 9px;
+    border-radius: 0;
+    transform: skew(6deg);
+    margin-right: -36px;
+    align-items: start;
+    background-image: linear-gradient(-45deg, #8f479a 1%, #dc2a74 100%);
+}
+
+.card4 .go-arrow {
+    transform: skew(-6deg);
+    margin-left: -2px;
+    margin-top: 9px;
+    opacity: 0;
+}
+
+.card4:hover {
+    border: 1px solid #cd3d73;
+}
+
+.card4 h3 {
+    margin-top: 8px;
+}
+
+.card4:hover .go-corner {
+    margin-right: -12px;
+}
+
+.card4:hover .go-arrow {
+    opacity: 1;
+}
+
+
+
+
+/* ------------------------ intersection  */
+
+
+.intersection {
+    padding: 50px 10px;
+    /* background: rgb(217, 217, 217);
+    background: var(--mainBackgroundGray); */
+}
+
+
+
+
+.intersection .row {
+    min-height: 200px;
+}
+
+
+@media(max-width: 768px) {
+    .intersection {
+        padding: 20px 10px;
+    }
+
+    .intersection .row {
+        min-height: 130px;
+    }
+}
+
+
+.interRight {
+    background-image: linear-gradient(to bottom, rgba(101, 39, 0, 0.52), rgba(0, 0, 0, 0.412)), url(../images/mosque-4525144_1920.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+
+
+.interleft {
+    background-image: linear-gradient(to bottom, rgb(101 61 0 / 11%), rgb(0 0 0 / 16%)), url("../images/suns-tornado.svg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+
+@media(max-width: 768px) {
+    .intersection .row {
+        min-height: 120px;
+    }
+
+    .interRight button {
+        font-size: 14px;
+
+    }
+
+    .interleft p {
+        font-size: 14px;
+    }
+
+}
+
+
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #ff57228c 0%, #d7800069 100%);
+    color: white;
+    padding: 0.7em 0.9em;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+}
+
+button svg {
+    width: 15px;
+    height: 15px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+}
+
+button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.437);
+}
+
+button:hover svg {
+    transform: rotate(45deg);
+}
+
+
+
+/* ------------------------ end intersection  */
+
+
+
+/* ------------------------ Tourism  */
+
+.tourism {
+    padding: 40px 0 0;
+    /* background-color: var(--mainBackgroundGray); */
+    background-image: url(../images/globe-1029209_1920.jpg);
+    background-image: linear-gradient(to bottom, rgb(87 34 0 / 28%), rgb(0 0 0 / 28%)), url(../images/globe-1029209_1920.jpg);
+    ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.tourism .backgroundMap .overlay {
+    backdrop-filter: blur(6px) brightness(0.7);
+}
+
+
+.tourism .tourismCard {
+    padding: 20px;
+    border-radius: 14px;
+    background-color: #93939314;
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 0px 31px -12px black;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    min-height: 300px;
+}
+
+.tourism h2,
+.tourism .tourismCard h3 {
+    border-left: 5px solid #ff5622e8;
+    padding-left: 15px;
+    color: white;
+
+}
+
+.tourism .tourismCard h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.tourism .tourismCard li {
+    color: #c5c5c5;
+}
+
+
+.tourism .tourismCard:hover {
+    transform: scale(0.97);
+}
+
+.tourism .tourismCard .img {
+    height: 50px;
+}
+
+
+
+
+
+/* ------------------------ Tourism3  */
+
+.tourism3 {
+    padding: 40px 0;
+    /* background-color: #f6f6f6; */
+
+}
+
+
+
+.tourism3 .row {
+    padding: 4px;
+    border-radius: 15px;
+}
+
+
+@media(max-width: 767px) {
+    .tourism3 {
+        background-image: url(../images/back.png);
+        /* background-position: center; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+
+    }
+
+    .tourism3 .row {
+        background-color: transparent;
+    }
+}
+
+
+.tourism3 .tourismCard {
+    padding: 20px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    min-height: 300px;
+    border-radius: 30px;
+    background: rgb(249 249 249);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+
+.tourism3 .tourismCard h3 {
+    border-left: 5px solid #ff5622e8;
+    padding-left: 15px;
+    color: rgb(18, 18, 18);
+
+}
+
+.tourism3 .tourismCard h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.tourism3 .tourismCard li {
+    color: #525252;
+}
+
+
+.tourism3 .tourismCard:hover {
+    transform: scale(0.97);
+}
+
+.tourism3 .tourismCard .img {
+    height: 50px;
+}
+
+
+/* -------------Footer ------------------- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    color: white;
+    padding: 40px;
+}
+
+/* -------------Footer ------------------- */
+
+
+
+/* -------------Footer black ------------------- */
+
+
+footer {
+    /* background: linear-gradient(170deg, rgb(8 8 8 / 94%) 0%, rgb(0, 0, 0) 100%); */
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    backdrop-filter: blur(18px);
+    box-shadow: 0px 10px 30px 1px #161616;
+    margin-top: 100px;
+}
+
+
+
+.footerBack p {
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* -------------Footer ------------------- */
+
+
+
+
+
+
+
+
+.toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+
+}
+
+#buttonToTop {
+    display: block;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    margin: 0;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+#buttonToTop:before,
+#buttonToTop:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 7px;
+}
+
+#buttonToTop:before {
+    border: 4px solid #f0eeef;
+    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+#buttonToTop:after {
+    border: 4px solid #f9efe9;
+    transform: scale(1.3);
+    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
+}
+
+#buttonToTop:hover:before,
+#buttonToTop:focus:before {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+        transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#buttonToTop:hover:after,
+#buttonToTop:focus:after {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+        transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button-elem {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 17px 21px 0 12px;
+    transform: rotate(-90deg);
+    fill: #f0eeef;
+}
+
+#buttonToTop:hover #buttonToTop-box,
+#buttonToTop:focus #buttonToTop-box {
+    transition: 0.4s;
+    transform: translateX(-56px);
+}
+
+#buttonToTop:hover .button-elem {
+    transform: translateY(3px) translateX(2px) rotate(-134deg);
+}

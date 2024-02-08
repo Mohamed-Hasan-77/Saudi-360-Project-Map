@@ -120,8 +120,8 @@ html {
 }
 
 .banner .header {
-    /* background-image: linear-gradient(to bottom, rgb(87 34 0 / 28%), rgb(0 0 0 / 28%)), url(../images/globe-1029209_1920.jpg); */
-    background-image: url(../images/u0.jpg);
+    /* background-image: linear-gradient(to bottom, rgb(87 34 0 / 28%), rgb(0 0 0 / 28%)), url(../images/globe-1029209_1920.webp); */
+    background-image: url(../images/u0.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ html {
     height: 400px;
     position: relative;
     overflow: hidden;
-    background-image: url(../images/globe-1029209_1920.jpg);
+    background-image: url(../images/globe-1029209_1920.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -709,7 +709,7 @@ html {
 
 
 .interRight {
-    background-image: linear-gradient(to bottom, rgba(101, 39, 0, 0.52), rgba(0, 0, 0, 0.412)), url(../images/mosque-4525144_1920.jpg);
+    background-image: linear-gradient(to bottom, rgba(101, 39, 0, 0.52), rgba(0, 0, 0, 0.412)), url(../images/mosque-4525144_1920.webp);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -816,8 +816,8 @@ button:hover svg {
 .tourism {
     padding: 40px 0 0;
     /* background-color: var(--mainBackgroundGray); */
-    background-image: url(../images/globe-1029209_1920.jpg);
-    background-image: linear-gradient(to bottom, rgb(87 34 0 / 28%), rgb(0 0 0 / 28%)), url(../images/globe-1029209_1920.jpg);
+    background-image: url(../images/globe-1029209_1920.webp);
+    background-image: linear-gradient(to bottom, rgb(87 34 0 / 28%), rgb(0 0 0 / 28%)), url(../images/globe-1029209_1920.webp);
     ;
     background-position: center;
     background-size: cover;

@@ -100,7 +100,7 @@ html {
     padding: 0px;
     background-color: var(--mainBackgroundGray);
     height: 70vh;
-    direction: rtl;
+
 }
 
 
@@ -137,7 +137,7 @@ html {
 .banner .soudiLogo {
     width: 150px;
     top: 15px;
-    left: 15px;
+    right: 15px;
 }
 
 .banner .bannrTitle {
@@ -151,8 +151,8 @@ html {
 
 .banner .bannrTitle h2 {
 
-    border-right: 5px solid #ff5622e8;
-    padding-right: 15px;
+    border-left: 5px solid #ff5622e8;
+    padding-left: 15px;
 }
 
 
@@ -923,7 +923,6 @@ html {
 
 .card-content {
     padding: 20px 20px 5px;
-    direction: rtl;
 }
 
 .KnowCard:hover {
@@ -971,14 +970,13 @@ html {
     background-color: #efefef;
     border-radius: 4px;
     padding-top: 10px;
-    padding: 0px 35px;
+    padding: 0px 20px;
     padding-top: 8px;
     margin-top: 12px;
     text-decoration: none;
     z-index: 0;
     overflow: hidden;
     box-shadow: 1px 1px 10px 0px #cfcfcf;
-    direction: ltr;
 }
 
 .card1:before {
@@ -1274,7 +1272,7 @@ button:hover svg {
 
 .tourism3 {
     padding: 40px 0;
-    direction: rtl;
+    /* background-color: #f6f6f6; */
 
 }
 
@@ -1314,8 +1312,8 @@ button:hover svg {
 
 
 .tourism3 .tourismCard h3 {
-    border-right: 5px solid #ff5622e8;
-    padding-right: 15px;
+    border-left: 5px solid #ff5622e8;
+    padding-left: 15px;
     color: rgb(18, 18, 18);
 
 }

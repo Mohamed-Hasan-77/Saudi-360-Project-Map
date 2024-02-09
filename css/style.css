@@ -1274,6 +1274,8 @@ footer {
 .button-box {
     display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
 }

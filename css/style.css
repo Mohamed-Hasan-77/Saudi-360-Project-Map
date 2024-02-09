@@ -711,13 +711,13 @@ html {
     }
 
     .locate::after {
-        content: '';
-        width: 13px;
+        content: none;
+        /* width: 13px;
         height: 13px;
         border: 4px solid red;
         bottom: -11px;
         transform: rotate(45deg) translate(0, 0);
-        animation: none;
+        animation: none; */
     }
 
     .locate::before {
@@ -837,11 +837,11 @@ html {
     .Taif span,
     .Jeddah span,
     .Mecca span {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .Maddinah span {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .Yanbu span,
@@ -849,7 +849,7 @@ html {
     .Rabegh span,
     .Najran span,
     .Jazan span {
-        font-size: 10px;
+        font-size: 8px;
     }
 
 
@@ -857,10 +857,6 @@ html {
         margin: 15px auto;
     }
 
-    .locate::after {
-        content: none;
-
-    }
 
     .locate::before {
 

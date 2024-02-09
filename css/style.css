@@ -716,14 +716,13 @@ html {
     }
 
     .locate::before {
-
+        content: none;
         left: 4px;
         top: 144%;
         width: 8px;
     }
 
 }
-
 
 
 

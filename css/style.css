@@ -909,39 +909,6 @@ html {
 
 
 
-/* black  */
-
-/* .KnowCard {
-    position: relative;
-    z-index: 2;
-    background-color: inherit;
-    -webkit-box-shadow: 0 4px 35px rgba(0, 0, 0, .1);
-    box-shadow: 2px 0px 6px rgb(255 255 255 / 12%) inset, 26px 17px 45px -27px black;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-
-}
-
-
-.card1 {
-    display: block;
-    position: relative;
-    width: 105%;
-    border-radius: 4px;
-    padding-top: 10px;
-    padding: 0px 20px;
-    padding-top: 8px;
-    margin-top: 12px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    box-shadow: 1px 1px 10px 0px black;
-} */
-/* black  */
-
 
 
 
@@ -1292,66 +1259,6 @@ button:hover svg {
 
 
 
-/* ------------------------ Tourism  */
-
-.tourism {
-    padding: 40px 0 0;
-    /* background-color: var(--mainBackgroundGray); */
-    background-image: url(../images/globe-1029209_1920.webp);
-    background-image: linear-gradient(to bottom, rgb(87 34 0 / 28%), rgb(0 0 0 / 28%)), url(../images/globe-1029209_1920.webp);
-    ;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.tourism .backgroundMap .overlay {
-    backdrop-filter: blur(6px) brightness(0.7);
-}
-
-
-.tourism .tourismCard {
-    padding: 20px;
-    border-radius: 14px;
-    background-color: #93939314;
-    backdrop-filter: blur(15px);
-    box-shadow: 5px 0px 31px -12px black;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-    min-height: 300px;
-}
-
-.tourism h2,
-.tourism .tourismCard h3 {
-    border-left: 5px solid #ff5622e8;
-    padding-left: 15px;
-    color: white;
-
-}
-
-.tourism .tourismCard h3 {
-    margin: 15px 0;
-    font-size: 20px;
-}
-
-.tourism .tourismCard li {
-    color: #c5c5c5;
-}
-
-
-.tourism .tourismCard:hover {
-    transform: scale(0.97);
-}
-
-.tourism .tourismCard .img {
-    height: 50px;
-}
-
-
-
-
-
 /* ------------------------ Tourism3  */
 
 .tourism3 {
@@ -1434,34 +1341,6 @@ button:hover svg {
 
 /* -------------Footer ------------------- */
 
-
-
-/* -------------Footer black ------------------- */
-
-
-footer {
-    /* background: linear-gradient(170deg, rgb(8 8 8 / 94%) 0%, rgb(0, 0, 0) 100%); */
-    padding: 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 10;
-    backdrop-filter: blur(18px);
-    box-shadow: 0px 10px 30px 1px #161616;
-    margin-top: 100px;
-}
-
-
-
-.footerBack p {
-    color: white;
-    font-weight: bold;
-}
-
-
-
-/* -------------Footer ------------------- */
 
 
 

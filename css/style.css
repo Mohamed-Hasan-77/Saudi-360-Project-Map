@@ -129,7 +129,7 @@ html {
     box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
 }
 
@@ -291,6 +291,8 @@ html {
     text-shadow: -1px 4px black;
     text-transform: uppercase;
     transform: rotateX(22deg);
+    cursor: pointer;
+
 }
 
 .Dammam {
@@ -888,7 +890,7 @@ html {
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     .knowCards {
         background-position: right;
     }

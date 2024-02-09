@@ -103,7 +103,6 @@ html {
 }
 
 
-
 .backgroundMap {
     top: 0;
     width: 100%;
@@ -252,7 +251,7 @@ html {
 
     .map {
         padding: 15px;
-        height: 40vh;
+        height: 60vh;
     }
 
     .map .container {
@@ -272,7 +271,7 @@ html {
     }
 }
 
-.locationOne {
+.location {
 
     top: 50%;
     left: 50%;
@@ -285,64 +284,140 @@ html {
     color: rgb(52, 52, 52);
 }
 
-.Two {
-    top: 60%;
-    left: 60%;
+.location p {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px 4px black;
+    text-transform: uppercase;
+    transform: rotateX(22deg);
+}
+
+.Dammam {
+    top: 33%;
+    right: 16%;
 }
 
 
-.Three {
-    top: 30%;
-    left: 30%;
+.Alkhabar {
+    top: 23%;
+    right: 24%;
 }
 
-/* .pulse {
-    height: 55px;
-    width: 55px;
-    animation: 1.5s pulse infinite ease-in-out;
-    border-radius: 50%;
-    background-color: #cecece;
-    transform: rotateX(70deg);
-    margin-top: -35px;
-    z-index: 1;
-
+.Buraydah {
+    top: 33%;
+    left: 45%;
 }
 
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0px 0px #d3d3d3;
-    }
-
-    100% {
-        box-shadow: 0 0 0 14px #2d2d2d00;
-    }
-} */
 
 
+.Batin {
+    top: 13%;
+    left: 41%;
+}
 
+
+.Tabuok {
+    top: 12%;
+    left: 18%;
+}
+
+
+.Maddinah {
+    top: 36%;
+    left: 26%;
+}
+
+
+.Yanbu {
+    top: 36%;
+    left: 20%;
+}
+
+
+.Mecca {
+    top: 50%;
+    left: 31%;
+}
+
+
+.Jeddah {
+    top: 56%;
+    left: 27%;
+}
+
+
+.Taif {
+    top: 54%;
+    left: 35%;
+}
+
+
+.Khamis {
+    bottom: 10%;
+    left: 39%;
+}
+
+
+.Rabegh {
+    top: 47%;
+    left: 24%;
+}
+
+
+.Najran {
+    top: 70%;
+}
+
+
+.Jazan {
+    top: 73%;
+    left: 39%;
+}
+
+
+.Dammam span,
+.Alkhabar span,
+.Buraydah span,
+.Batin span,
+.Tabuok span,
+.Maddinah span,
+.Taif span,
+.Jeddah span {
+    font-size: 24px;
+}
+
+.Yanbu span,
+.Khamis span,
+.Rabegh span,
+.Najran span,
+.Jazan span {
+    font-size: 16px;
+}
 
 
 .locate {
-    width: 35px;
+    width: 22px;
     height: 35px;
     display: block;
-    margin: 20px auto;
+    margin: 17px auto;
     box-sizing: border-box;
     position: relative;
 }
 
 .locate::after {
     content: '';
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
     left: 0;
     bottom: 0;
     position: absolute;
     border-radius: 50% 50% 0;
-    border: 10px solid red;
-    transform: rotate(45deg) translate(0, 0);
+    border: 6px solid red;
+    transform: rotate(22deg) translate(0, 0);
     box-sizing: border-box;
     animation: animMarker 1s ease-in-out infinite alternate;
+    z-index: 2;
 }
 
 .locate::before {
@@ -350,10 +425,8 @@ html {
     box-sizing: border-box;
     position: absolute;
     left: 0;
-    right: 0;
-    margin: auto;
     top: 150%;
-    width: 24px;
+    width: 20px;
     height: 4px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.2);
@@ -380,6 +453,156 @@ html {
     }
 }
 
+
+
+
+
+
+
+@media(max-width: 1200px) {
+
+    .location {
+
+        top: 34%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 16px;
+        color: rgb(52, 52, 52);
+    }
+
+    .location p {
+        font-weight: 600;
+        font-size: 20px;
+        color: white;
+        text-shadow: -1px 4px black;
+        text-transform: uppercase;
+        transform: rotateX(22deg);
+    }
+
+    .Dammam {
+        top: 25%;
+        right: 16%;
+    }
+
+
+    .Alkhabar {
+        top: 16%;
+        right: 24%;
+    }
+
+    .Buraydah {
+        top: 25%;
+        left: 45%;
+    }
+
+
+
+    .Batin {
+        top: 5%;
+        left: 37%;
+    }
+
+
+    .Tabuok {
+        top: 6%;
+        left: 18%;
+    }
+
+
+    .Maddinah {
+        top: 25%;
+        left: 24%;
+    }
+
+
+    .Yanbu {
+        top: 28%;
+        left: 20%;
+    }
+
+
+    .Mecca {
+        top: 40%;
+        left: 31%;
+    }
+
+
+    .Jeddah {
+        top: 47%;
+        left: 27%;
+    }
+
+
+    .Taif {
+        top: 46%;
+        left: 34%;
+    }
+
+
+    .Khamis {
+        bottom: -4%;
+        left: 36%;
+    }
+
+
+    .Rabegh {
+        top: 41%;
+        left: 24%;
+    }
+
+
+    .Najran {
+        top: 62%;
+    }
+
+
+    .Jazan {
+        top: 64%;
+        left: 38%;
+    }
+
+
+    .Dammam span,
+    .Alkhabar span,
+    .Buraydah span,
+    .Batin span,
+    .Tabuok span,
+    .Taif span,
+    .Jeddah span {
+        font-size: 17px;
+    }
+
+    .Maddinah span {
+        font-size: 15px;
+    }
+
+    .Yanbu span,
+    .Khamis span,
+    .Rabegh span,
+    .Najran span,
+    .Jazan span {
+        font-size: 14px;
+    }
+
+
+    .locate {
+        margin: 15px auto;
+    }
+
+    .locate::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 5px solid red;
+    }
+
+
+
+}
 
 
 

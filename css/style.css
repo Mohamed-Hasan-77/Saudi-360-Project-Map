@@ -232,19 +232,20 @@ html {
     right: 20px;
     font-size: 60px;
     font-weight: 800;
-    top: 100px;
+    top: 10%;
     color: #a17443;
-    text-shadow: -4px 3px black;
+    text-shadow: -3px 3px black;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
 
 
     .mapTitle {
         right: 18px;
-        font-size: 50px;
-        top: 45px;
-        text-shadow: -4px 3px black;
+        font-size: 40px;
+        top: 30px;
+        text-shadow: -2px 2px black;
+
     }
 }
 

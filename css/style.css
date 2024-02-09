@@ -250,17 +250,19 @@ html {
 @media(max-width: 767px) {
 
     .map {
-        padding: 15px;
-        height: 60vh;
+        padding: 0px;
+        height: 55vh;
     }
 
     .map .container {
         height: 100%;
         padding: 0;
+        overflow: visible;
     }
 
     .map .container img {
         height: 100%;
+        border-radius: 0;
     }
 
     .mapTitle {

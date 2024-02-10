@@ -221,7 +221,6 @@ html {
 .map .container {
     box-shadow: 0 4px 14px rgb(0 0 0 / 40%);
     border-radius: 40px;
-    overflow: hidden;
     position: relative;
     padding: 10px;
 
@@ -284,6 +283,8 @@ html {
     font-weight: bold;
     font-size: 16px;
     color: rgb(52, 52, 52);
+    width: fit-content;
+    height: fit-content;
 }
 
 .location p {
@@ -294,18 +295,19 @@ html {
     text-transform: uppercase;
     transform: rotateX(22deg);
     cursor: pointer;
+    z-index: 100;
 
 }
 
 .Dammam {
-    top: 33%;
-    right: 16%;
+    top: 28%;
+    left: 62%;
 }
 
 
 .Alkhabar {
-    top: 23%;
-    right: 24%;
+    top: 22%;
+    left: 60%;
 }
 
 .Buraydah {
@@ -358,7 +360,7 @@ html {
 
 
 .Khamis {
-    bottom: 10%;
+    top: 62%;
     left: 39%;
 }
 
@@ -421,7 +423,7 @@ html {
     transform: rotate(22deg) translate(0, 0);
     box-sizing: border-box;
     animation: animMarker 1s ease-in-out infinite alternate;
-    z-index: 2;
+    z-index: 110;
 }
 
 .locate::before {
@@ -461,9 +463,7 @@ html {
 
 
 
-
-
-@media(max-width: 1200px) {
+@media(max-width: 1025px) {
 
     .location {
 
@@ -472,14 +472,14 @@ html {
     }
 
     .Dammam {
-        top: 25%;
-        right: 16%;
+        top: 20%;
+        left: 60%;
     }
 
 
     .Alkhabar {
-        top: 16%;
-        right: 24%;
+        top: 13%;
+        left: 58%;
     }
 
     .Buraydah {
@@ -532,8 +532,8 @@ html {
 
 
     .Khamis {
-        bottom: -4%;
         left: 36%;
+        top: 55%;
     }
 
 
@@ -592,7 +592,6 @@ html {
 
 
 
-
 @media(max-width: 767px) {
 
     .location {
@@ -603,14 +602,14 @@ html {
     }
 
     .Dammam {
-        top: 25%;
-        right: 16%;
+        top: 22%;
+        left: 60%;
     }
 
 
     .Alkhabar {
         top: 16%;
-        right: 24%;
+        left: 59%;
     }
 
     .Buraydah {
@@ -663,7 +662,7 @@ html {
 
 
     .Khamis {
-        bottom: -4%;
+        top: 60%;
         left: 34%;
     }
 
@@ -716,12 +715,6 @@ html {
 
     .locate::after {
         content: none;
-        /* width: 13px;
-        height: 13px;
-        border: 4px solid red;
-        bottom: -11px;
-        transform: rotate(45deg) translate(0, 0);
-        animation: none; */
     }
 
     .locate::before {
@@ -750,14 +743,14 @@ html {
     }
 
     .Dammam {
-        top: 21%;
-        right: 12%;
+        top: 19%;
+        left: 61%;
     }
 
 
     .Alkhabar {
         top: 14%;
-        right: 16%;
+        left: 61%;
     }
 
     .Buraydah {
@@ -810,7 +803,7 @@ html {
 
 
     .Khamis {
-        bottom: -4%;
+        top: 55%;
         left: 34%;
     }
 
@@ -874,7 +867,212 @@ html {
 
 
 
-/* Know Section  */
+
+
+/* show more Cards */
+
+.showMore {
+    top: 50%;
+    left: 0;
+}
+
+
+.showMore .closeBtn {
+    position: absolute;
+    bottom: 0em;
+    transition: all 0.3s;
+    display: none;
+    z-index: 8888;
+
+}
+
+.showMore .closeBtn button {
+    position: absolute;
+    bottom: -1em;
+    left: 1em;
+    width: 2em;
+    height: 2em;
+    border: none;
+    background: rgb(207 0 0);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    box-shadow: -4px 2px black, 2px 0px 0px -1px white inset;
+
+}
+
+
+
+
+.showMore .closeBtn svg {
+    width: 30px;
+    transition: all 0.5s;
+
+}
+
+
+.showMore .closeBtn button:hover {
+    transform: scale(0.99) translate(-1px, 2px);
+    background-color: rgb(179, 1, 1);
+    box-shadow: -2px 0px black;
+
+}
+
+
+
+
+.showMore .imgPil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(231, 231, 231);
+    z-index: 80;
+    box-shadow: -8px 6px 12px -5px black;
+    cursor: pointer;
+    z-index: 888;
+    transition: all 0.6s ease-in-out;
+    display: none;
+    opacity: 0;
+    transform: translate(0em, -1em);
+
+}
+
+.showMore .imgPil img {
+    border-radius: 50%;
+}
+
+
+.showMore .imgPil.pilone {
+    transform: translate(7em);
+}
+
+.showMore .imgPil.piltwo {
+
+    transform: translate(5em, 5em);
+
+}
+
+.showMore .imgPil.pilthree {
+    transform: translate(-5em);
+
+
+}
+
+.showMore .imgPil.pilfour {
+    transform: translate(-2em, -5em);
+
+}
+
+.showMore .imgPil.pilfive {
+    transform: translate(-2em, 5em);
+
+}
+
+.showMore .imgPil.pilsix {
+    transform: translate(4em, -4em);
+
+}
+
+
+@media(max-width: 1024px) {
+    .showMore .closeBtn button {
+        bottom: 1em;
+        left: 1em;
+        width: 1em;
+        height: 1em;
+        padding: 3px;
+    }
+
+    .showMore .imgPil {
+        width: 25px;
+        height: 25px;
+        border: none;
+    }
+
+    .showMore .imgPil.pilone {
+        transform: translate(3em, 1em);
+    }
+
+    .showMore .imgPil.piltwo {
+
+        transform: translate(3em, 3em);
+
+    }
+
+    .showMore .imgPil.pilthree {
+        transform: translate(-2em, 1em);
+
+
+    }
+
+    .showMore .imgPil.pilfour {
+        transform: translate(-1em, -1em);
+
+    }
+
+    .showMore .imgPil.pilfive {
+        transform: translate(0em, 3em);
+
+    }
+
+    .showMore .imgPil.pilsix {
+        transform: translate(2em, -1em);
+
+    }
+}
+
+
+
+
+.location .landmarkCard {
+    background: #c7c7c770;
+    backdrop-filter: blur(7px);
+    min-height: 200px;
+    min-width: 180px;
+    z-index: 9999;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.location .landmarkCard .card-content {
+    padding: 5px;
+    direction: rtl;
+}
+
+.location .landmarkCard .img {
+    padding: 7px;
+}
+
+.location .landmarkCard .img img {
+    border-radius: 30px 30px 7px 8px;
+}
+
+.location .landmarkCard p {
+    color: black;
+    text-shadow: none;
+    font-size: 12px;
+
+
+}
+
+.location .landmarkCard:hover {
+    transform: translateY(-15px);
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------ Know Section  */
 
 .knowCards {
     background: rgb(217, 217, 217);
@@ -883,13 +1081,10 @@ html {
     overflow: hidden;
 
     background-image: url(../images/back.png);
-    /* background-position: center; */
     background-size: cover;
     background-repeat: no-repeat;
 
-
 }
-
 
 
 @media(max-width: 1024px) {
@@ -911,15 +1106,6 @@ html {
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 
 }
-
-.KnowCard .patternTwo {
-    right: -50%;
-}
-
-
-
-
-
 
 
 .card-content {
@@ -1206,7 +1392,7 @@ html {
 
 
 
-button {
+.intersection button {
     font-family: inherit;
     font-size: 20px;
     background: linear-gradient(to bottom, #ff57228c 0%, #d7800069 100%);
@@ -1222,30 +1408,30 @@ button {
     transition: all 0.3s;
 }
 
-button:hover {
+.intersection button:hover {
     transform: translateY(-3px);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-button:active {
+.intersection button:active {
     transform: scale(0.95);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-button span {
+.intersection button span {
     display: block;
     margin-left: 0.4em;
     transition: all 0.3s;
 }
 
-button svg {
+.intersection button svg {
     width: 15px;
     height: 15px;
     fill: white;
     transition: all 0.3s;
 }
 
-button .svg-wrapper {
+.intersection button .svg-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1257,11 +1443,11 @@ button .svg-wrapper {
     transition: all 0.3s;
 }
 
-button:hover .svg-wrapper {
+.intersection button:hover .svg-wrapper {
     background-color: rgba(255, 255, 255, 0.437);
 }
 
-button:hover svg {
+.intersection button:hover svg {
     transform: rotate(45deg);
 }
 
@@ -1305,11 +1491,12 @@ button:hover svg {
 
 .tourism3 .tourismCard {
     padding: 20px;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
     min-height: 300px;
     border-radius: 30px;
     background: rgb(249 249 249);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
 }
 
 
@@ -1337,6 +1524,13 @@ button:hover svg {
 
 .tourism3 .tourismCard .img {
     height: 50px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+
+.tourism3 .tourismCard:hover .img {
+    filter: saturate(0);
+    transform: scale(1.1);
 }
 
 
@@ -1360,6 +1554,9 @@ button:hover svg {
 
 
 
+/* To Top button */
+
+
 
 .toTop {
     position: fixed;
@@ -1368,6 +1565,68 @@ button:hover svg {
     z-index: 1000;
 
 }
+
+
+.toTop button {
+    font-family: inherit;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #ff57228c 0%, #d7800069 100%);
+    color: white;
+    padding: 0.7em 0.9em;
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 21px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.toTop button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.toTop button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toTop button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+}
+
+.toTop button svg {
+    width: 15px;
+    height: 15px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+.toTop button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+}
+
+.toTop button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.437);
+}
+
+.toTop button:hover svg {
+    transform: rotate(45deg);
+}
+
+
 
 #buttonToTop {
     display: block;
@@ -1426,7 +1685,7 @@ button:hover svg {
     justify-content: center;
     align-items: center;
     top: 0;
-    left: 0;
+    left: 4px;
 }
 
 .button-elem {

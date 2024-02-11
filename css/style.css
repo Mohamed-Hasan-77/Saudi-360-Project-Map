@@ -40,6 +40,7 @@ html {
     margin: 70px auto 50px;
     position: relative;
     text-align: center;
+    z-index: 50;
 
 }
 
@@ -58,7 +59,7 @@ html {
     margin-top: 20px;
 }
 
-.sectionTitle span {
+.sectionTitle .tilteBorder span {
     display: inline-block;
     height: 4px;
     width: 45px;
@@ -66,14 +67,12 @@ html {
     background: #FF9800;
 }
 
-.sectionTitle span:nth-of-type(2) {
+.sectionTitle .tilteBorder span:nth-of-type(2) {
     width: 15px;
     height: 15px;
     transform: rotate(45deg);
     background-color: #2196F3;
 }
-
-
 
 
 @media(max-width: 768px) {
@@ -89,12 +88,13 @@ html {
 
 .mShadow {
     box-shadow: 0 4px 14px rgb(0 0 0 / 50%);
-
 }
 
 
-/* ------------------------ banner  */
 
+
+
+/* ------------------------ banner  */
 
 .banner {
     padding: 0px;
@@ -200,8 +200,10 @@ html {
 }
 
 
-/* ------------------------ map  */
 
+
+
+/* ------------------------ map  */
 
 .map {
     background: rgb(217, 217, 217);
@@ -272,6 +274,10 @@ html {
     }
 }
 
+
+
+/* ----------------- locations Set up ---------------- */
+
 .location {
 
     top: 50%;
@@ -290,8 +296,8 @@ html {
 .location p {
     font-weight: 600;
     font-size: 20px;
-    color: white;
-    text-shadow: -1px 4px black;
+    color: rgb(255, 255, 255);
+    /* text-shadow: -1px 4px black; */
     text-transform: uppercase;
     transform: rotateX(22deg);
     cursor: pointer;
@@ -401,6 +407,14 @@ html {
     font-size: 16px;
 }
 
+.Yanbu span,
+.Rabegh span,
+.Najran span,
+.Jazan span,
+.Jeddah span {
+    color: white;
+}
+
 
 .locate {
     width: 22px;
@@ -420,9 +434,9 @@ html {
     position: absolute;
     border-radius: 50% 50% 0;
     border: 6px solid red;
-    transform: rotate(22deg) translate(0, 0);
+    transform: rotate(46deg) translate(0, 0);
     box-sizing: border-box;
-    animation: animMarker 1s ease-in-out infinite alternate;
+    /* animation: animMarker 1s ease-in-out infinite alternate; */
     z-index: 110;
 }
 
@@ -436,7 +450,7 @@ html {
     height: 4px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.2);
-    animation: animShadow 1s ease-in-out infinite alternate;
+    /* animation: animShadow 1s ease-in-out infinite alternate; */
 }
 
 @keyframes animMarker {
@@ -582,10 +596,11 @@ html {
     }
 
     .locate::after {
-        content: '';
-        width: 16px;
-        height: 16px;
-        border: 5px solid red;
+        width: 10px;
+        height: 10px;
+        border: 3px solid red;
+        left: 2px;
+        bottom: -11px;
     }
 
 }
@@ -714,7 +729,7 @@ html {
     }
 
     .locate::after {
-        content: none;
+        /* content: none; */
     }
 
     .locate::before {
@@ -723,11 +738,6 @@ html {
         width: 8px;
     }
 
-    .location p {
-
-        text-shadow: -1px 3px black;
-
-    }
 
 }
 
@@ -743,14 +753,14 @@ html {
     }
 
     .Dammam {
-        top: 19%;
-        left: 61%;
+        top: 20%;
+        left: 60%;
     }
 
 
     .Alkhabar {
-        top: 14%;
-        left: 61%;
+        top: 12%;
+        left: 59%;
     }
 
     .Buraydah {
@@ -767,26 +777,26 @@ html {
 
 
     .Tabuok {
-        top: 3%;
+        top: 0%;
         left: 17%;
     }
 
 
     .Maddinah {
-        top: 25%;
-        left: 20%;
+        top: 26%;
+        left: 21%;
     }
 
 
     .Yanbu {
         top: 28%;
-        left: 19%;
+        left: 18%;
     }
 
 
     .Mecca {
-        top: 39%;
-        left: 30%;
+        top: 37%;
+        left: 29%;
     }
 
 
@@ -797,7 +807,7 @@ html {
 
 
     .Taif {
-        top: 44%;
+        top: 42%;
         left: 32%;
     }
 
@@ -809,8 +819,8 @@ html {
 
 
     .Rabegh {
-        top: 42%;
-        left: 23%;
+        top: 39%;
+        left: 22%;
     }
 
 
@@ -854,9 +864,7 @@ html {
         margin: 15px auto;
     }
 
-
     .locate::before {
-
         left: 4px;
         top: 144%;
         width: 8px;
@@ -865,15 +873,112 @@ html {
 }
 
 
+@media (max-width: 767px) and (orientation: landscape) {
+    .map {
+        height: unset;
+    }
+
+    .location {
+        top: 31%;
+        left: 47%;
+    }
+
+    .Dammam {
+        top: 15%;
+        left: 62%;
+    }
+
+
+    .Alkhabar {
+        top: 8%;
+        left: 59%;
+    }
+
+    .Buraydah {
+        top: 19%;
+        left: 45%;
+    }
 
 
 
+    .Batin {
+        top: -1%;
+        left: 39%;
+    }
 
-/* show more Cards */
+
+    .Tabuok {
+        top: -1%;
+        left: 17%;
+    }
+
+
+    .Maddinah {
+        top: 23%;
+        left: 24%;
+    }
+
+
+    .Yanbu {
+        top: 25%;
+        left: 20%;
+    }
+
+
+    .Mecca {
+        top: 40%;
+        left: 31%;
+    }
+
+
+    .Jeddah {
+        top: 44%;
+        left: 27%;
+    }
+
+
+    .Taif {
+        top: 40%;
+        left: 33%;
+    }
+
+
+    .Khamis {
+        left: 36%;
+        top: 50%;
+    }
+
+
+    .Rabegh {
+        top: 36%;
+        left: 23%;
+    }
+
+
+    .Najran {
+        top: 59%;
+    }
+
+
+    .Jazan {
+        top: 61%;
+        left: 38%;
+    }
+}
+
+
+
+/* ----------------- locations Set up ---------------- */
+
+
+
+/* --------------  show more Cards -------------- */
 
 .showMore {
     top: 50%;
     left: 0;
+    transform: rotateY(15deg) rotateX(13deg);
+    z-index: 999;
 }
 
 
@@ -893,7 +998,7 @@ html {
     width: 2em;
     height: 2em;
     border: none;
-    background: rgb(207 0 0);
+    background: #f30000;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -915,7 +1020,7 @@ html {
 
 .showMore .closeBtn button:hover {
     transform: scale(0.99) translate(-1px, 2px);
-    background-color: rgb(179, 1, 1);
+    background-color: #9d2323;
     box-shadow: -2px 0px black;
 
 }
@@ -929,18 +1034,27 @@ html {
     border-radius: 50%;
     border: 2px solid rgb(231, 231, 231);
     z-index: 80;
-    box-shadow: -8px 6px 12px -5px black;
+    box-shadow: -7px 6px 10px -2px black;
     cursor: pointer;
-    z-index: 888;
-    transition: all 0.6s ease-in-out;
+    z-index: 8888;
     display: none;
     opacity: 0;
     transform: translate(0em, -1em);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
 
 }
 
 .showMore .imgPil img {
     border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.showMore .imgPil:hover img {
+    transform: scale(1.3);
+    filter: brightness(1.2);
 }
 
 
@@ -961,7 +1075,7 @@ html {
 }
 
 .showMore .imgPil.pilfour {
-    transform: translate(-2em, -5em);
+    transform: translate(-1em, -3em);
 
 }
 
@@ -974,6 +1088,9 @@ html {
     transform: translate(4em, -4em);
 
 }
+
+
+
 
 
 @media(max-width: 1024px) {
@@ -1026,33 +1143,100 @@ html {
 
 
 
-.location .landmarkCard {
-    background: #c7c7c770;
+
+/* --------------  location Cards -------------- */
+
+
+.landMarkCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    background-color: #00000073;
+    /* backdrop-filter: blur(2px); */
+    border-radius: 40px;
+    display: none;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    opacity: 0;
+}
+
+.landMarkCards .landmarkCard {
+    background: #ffffff91;
     backdrop-filter: blur(7px);
-    min-height: 200px;
-    min-width: 180px;
+    height: 50%;
+    width: 50%;
     z-index: 9999;
     box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
     border-radius: 40px;
-    display: flex;
     flex-direction: column;
+    position: relative;
+    transform: translateY(-80px);
+    opacity: 0;
+    overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.location .landmarkCard .card-content {
+.landMarkCards .landmarkCard .closeCardButton {
+
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+
+.landMarkCards .landmarkCard .closeCardBtn {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(220, 3, 3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+    box-shadow: -1px 6px 16px -7px black;
+}
+
+
+.landMarkCards .landmarkCard .closeCardButton:hover {
+    transform: scale(0.95);
+}
+
+
+
+
+.landMarkCards .landmarkCard .card-content {
     padding: 5px;
     direction: rtl;
 }
 
-.location .landmarkCard .img {
+.landMarkCards .landmarkCard .card1 {
+    display: block;
+    position: relative;
+    width: 105%;
+    background-color: #7b7b7b29;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding: 0px 35px;
+    padding-top: 8px;
+    margin-top: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px 0px #4d4d4d;
+    direction: ltr;
+}
+
+.landMarkCards .landmarkCard .img {
     padding: 7px;
 }
 
-.location .landmarkCard .img img {
+.landMarkCards .landmarkCard .img img {
     border-radius: 30px 30px 7px 8px;
 }
 
-.location .landmarkCard p {
+.landMarkCards .landmarkCard p {
     color: black;
     text-shadow: none;
     font-size: 12px;
@@ -1060,7 +1244,7 @@ html {
 
 }
 
-.location .landmarkCard:hover {
+.landMarkCards .landmarkCard:hover {
     transform: translateY(-15px);
 }
 
@@ -1070,9 +1254,26 @@ html {
 
 
 
+.landMarkCards .landmarkCard.showtheCard {
+    display: flex;
+    transform: translateY(0px);
+    opacity: 1;
+}
 
 
-/* ------------------------ Know Section  */
+
+
+
+
+
+
+/* --------------  end location Cards -------------- */
+
+
+
+
+
+/* ------------------------  Section Two  */
 
 .knowCards {
     background: rgb(217, 217, 217);
@@ -1333,6 +1534,8 @@ html {
     padding: 50px 10px;
     /* background: rgb(217, 217, 217);
     background: var(--mainBackgroundGray); */
+    position: relative;
+    z-index: 50;
 }
 
 
@@ -1457,13 +1660,174 @@ html {
 
 
 
-/* ------------------------ Tourism3  */
+/* ------------------------ Tourism  */
 
 .tourism3 {
     padding: 40px 0;
     direction: rtl;
-
+    position: relative;
 }
+
+.theCloud {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 250px;
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: ltr;
+}
+
+.theCloud .cloud {
+    width: 250px;
+}
+
+.theCloud .front {
+    padding-top: 45px;
+    margin-left: -15px;
+    display: inline;
+    position: absolute;
+    z-index: 11;
+    animation: clouds 8s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.theCloud .back {
+    margin-top: -30px;
+    margin-left: 152px;
+    z-index: 12;
+    animation: clouds 12s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.theCloud span.right-front {
+    width: 45px;
+    height: 45px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -25px;
+    z-index: 5;
+}
+
+.theCloud span.left-front {
+    width: 65px;
+    height: 65px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+}
+
+.theCloud span.right-back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -20px;
+    z-index: 5;
+}
+
+.theCloud span.left-back {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+}
+
+.theCloud span.sun {
+    width: 120px;
+    height: 120px;
+    background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+    background: linear-gradient(to right, #fcbb04, #fffc00);
+    border-radius: 60px;
+    display: inline;
+    position: absolute;
+}
+
+.theCloud span.sunshine {
+    animation: sunshines 2s infinite;
+}
+
+@keyframes sunshines {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+@keyframes clouds {
+    0% {
+        transform: translateX(15px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(15px);
+    }
+}
+
+
+@media(max-width: 767px) {
+
+    .theCloud {
+        right: -20%;
+        top: 20px;
+    }
+
+    .theCloud .front {
+        margin-left: 83px;
+    }
+
+    .theCloud span.left-front {
+        width: 45px;
+        height: 45px;
+    }
+
+    .theCloud span.right-front {
+        width: 25px;
+        height: 25px;
+        margin-left: -18px;
+    }
+
+
+    .theCloud span.sun {
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .theCloud .back {
+        margin-left: 107px;
+    }
+
+    .theCloud span.left-back {
+        width: 15px;
+        height: 15px;
+    }
+
+    .theCloud span.right-back {
+        width: 35px;
+        height: 35px;
+        margin-left: -11px;
+
+    }
+}
+
 
 
 
@@ -1543,7 +1907,13 @@ html {
     background-color: #161616;
     color: white;
     padding: 40px;
+    position: relative;
 }
+
+
+
+
+
 
 /* -------------Footer ------------------- */
 

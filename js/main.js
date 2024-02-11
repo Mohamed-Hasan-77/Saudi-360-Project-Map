@@ -19,18 +19,35 @@ window.onscroll = () => {
 
 
 
-let show = document.querySelector(".imgPil");
 
 
 
 
 function showpills(cityName) {
 
-  let pills = document.querySelectorAll("." + cityName +` .imgPil`);
-  let closBtn = document.querySelector("." + cityName +` .closeBtn`);
+  let pilsClaseName = "." + cityName +` .imgPil`;
+  let CloselaseName = "." + cityName +` .closeBtn`;
+
+  let pills = document.querySelectorAll(pilsClaseName);
+  let closBtn = document.querySelector(CloselaseName);
+
+
+  let checkExit = document.querySelector(".pilone")
+  let result = ""
+
+  // if(checkExit == null){
+  //   result = false
+  // } else {
+  //   result = true
+  // }
+
+  // if(result) {
+  //   collapse(CloselaseName, pilsClaseName)
+  // showMyPills(pills, closBtn)
+
+  // }
 
   showMyPills(pills, closBtn)
-
 
 }
 
@@ -164,5 +181,39 @@ function showMyPills(pills, closBtn) {
 
   
 
+
+}
+
+
+
+
+
+function showCard(cardName) {
+  
+  let theCard = document.querySelector("." + cardName);
+  let overlay = document.querySelector(`.landMarkCards`);
+
+  overlay.style.display = 'flex';
+  setTimeout(()=> {
+    overlay.style.opacity = '1';
+    theCard.classList.add('showtheCard')
+  }, 100)
+
+}
+
+
+
+
+
+function closeCard() {
+
+  let theCard = document.querySelector(".landmarkCard");
+  let overlay = document.querySelector(`.landMarkCards`);
+
+  theCard.classList.remove('showtheCard')
+  setTimeout(()=> {
+    overlay.style.opacity = '0';
+    overlay.style.display = 'none';
+  }, 200)
 
 }

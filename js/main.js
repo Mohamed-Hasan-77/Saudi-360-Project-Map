@@ -69,12 +69,12 @@ function collapse(theCloseBtn, pills) {
 
   setTimeout(()=> {
     closeBtn.style.display = 'none';
-  }, 500)
+  }, 400)
   
   mypills.forEach((pill) => {
     setTimeout(()=> {
       pill.style.opacity = '0';
-    }, 500)
+    }, 800)
 
     setTimeout(()=> {
       pill.style.display = 'none';
@@ -83,7 +83,7 @@ function collapse(theCloseBtn, pills) {
     if(pill.classList.contains("one")) {
       setTimeout(()=> {
         pill.classList.remove("pilone")
-      }, 100)
+      }, 200)
     } else if(pill.classList.contains("two")) {
       setTimeout(()=> {
         pill.classList.remove("piltwo")
@@ -93,22 +93,47 @@ function collapse(theCloseBtn, pills) {
     } else if(pill.classList.contains("three")) {
       setTimeout(()=> {
         pill.classList.remove("pilthree")
-              }, 300)
+              },200)
       
     } else if(pill.classList.contains("four")) {
       setTimeout(()=> {
         pill.classList.remove("pilfour")
-              }, 400)
+              },200)
       
     } else if(pill.classList.contains("five")) {
       setTimeout(()=> {
         pill.classList.remove("pilfive")
-              }, 500)
+              },200)
       
     }  else if(pill.classList.contains("six")) {
       setTimeout(()=> {
         pill.classList.remove("pilsix")
-              }, 600)
+              },200)
+      
+    } else if(pill.classList.contains("seven")) {
+      setTimeout(()=> {
+        pill.classList.remove("pilseven")
+      },200)
+      
+    } else if(pill.classList.contains("eight")) {
+      setTimeout(()=> {
+        pill.classList.remove("pileight")
+      },200)
+      
+    } else if(pill.classList.contains("nine")) {
+      setTimeout(()=> {
+        pill.classList.remove("pilnine")
+      }, 200)
+      
+    } else if(pill.classList.contains("ten")) {
+      setTimeout(()=> {
+        pill.classList.remove("pilten")
+      }, 200)
+      
+    } else if(pill.classList.contains("eleven")) {
+      setTimeout(()=> {
+        pill.classList.remove("pileleven")
+      }, 200)
       
     }
 
@@ -139,7 +164,7 @@ function showMyPills(pills, closBtn) {
     pill.style.display = 'block';
     setTimeout(()=> {
       pill.style.opacity = '1';
-    }, 100)
+    }, 200)
 
     if(pill.classList.contains("one")) {
       setTimeout(()=> {
@@ -149,31 +174,61 @@ function showMyPills(pills, closBtn) {
       setTimeout(()=> {
         pill.classList.add("piltwo")
 
-      }, 200)
+      },200)
   
     } else if(pill.classList.contains("three")) {
       setTimeout(()=> {
         pill.classList.add("pilthree")
 
-      }, 300)
+      },200)
       
     } else if(pill.classList.contains("four")) {
       setTimeout(()=> {
         pill.classList.add("pilfour")
 
-      }, 400)
+      },200)
       
     } else if(pill.classList.contains("five")) {
       setTimeout(()=> {
         pill.classList.add("pilfive")
 
-      }, 500)
+      },200)
       
     }  else if(pill.classList.contains("six")) {
       setTimeout(()=> {
         pill.classList.add("pilsix")
 
-      }, 600)
+      },200)
+      
+    } else if(pill.classList.contains("seven")) {
+      setTimeout(()=> {
+        pill.classList.add("pilseven")
+
+      },200)
+      
+    } else if(pill.classList.contains("eight")) {
+      setTimeout(()=> {
+        pill.classList.add("pileight")
+
+      },200)
+      
+    } else if(pill.classList.contains("nine")) {
+      setTimeout(()=> {
+        pill.classList.add("pilnine")
+
+      }, 200)
+      
+    } else if(pill.classList.contains("ten")) {
+      setTimeout(()=> {
+        pill.classList.add("pilten")
+
+      }, 200)
+      
+    } else if(pill.classList.contains("eleven")) {
+      setTimeout(()=> {
+        pill.classList.add("pileleven")
+
+      }, 200)
       
     }
 
@@ -194,6 +249,7 @@ function showCard(cardName) {
   let overlay = document.querySelector(`.landMarkCards`);
 
   overlay.style.display = 'flex';
+  theCard.style.display = 'flex';
   setTimeout(()=> {
     overlay.style.opacity = '1';
     theCard.classList.add('showtheCard')
@@ -205,15 +261,17 @@ function showCard(cardName) {
 
 
 
-function closeCard() {
+function closeCard(cardName) {
 
-  let theCard = document.querySelector(".landmarkCard");
+  let theCard = document.querySelector("." + cardName);
   let overlay = document.querySelector(`.landMarkCards`);
 
   theCard.classList.remove('showtheCard')
+
   setTimeout(()=> {
     overlay.style.opacity = '0';
     overlay.style.display = 'none';
-  }, 200)
+    theCard.style.display = 'none';
+  }, 100)
 
 }

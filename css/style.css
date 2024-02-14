@@ -268,7 +268,6 @@ html {
 .map {
     background: rgb(217, 217, 217);
     background: var(--mainBackgroundGray);
-    padding: 50px 50px 30px;
     background-image: url(../images/sand-paper.webp);
     background-position: center;
     background-size: cover;
@@ -314,7 +313,7 @@ html {
 
     .map {
         padding: 15px;
-        height: 50vh;
+        /* height: 50vh; */
     }
 
     .map .container {

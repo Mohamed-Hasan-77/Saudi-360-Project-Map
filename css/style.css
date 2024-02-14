@@ -355,8 +355,8 @@ html {
 }
 
 .location p {
-    font-weight: 600;
-    font-size: 25px;
+    font-weight: bold;
+    font-size: 30px;
     color: rgb(255, 255, 255);
     /* text-shadow: -1px 4px black; */
     text-transform: uppercase;
@@ -1054,19 +1054,19 @@ html {
 
 .showMore .closeBtn button {
     position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(50%, -50%);
-    width: 2em;
-    height: 2em;
+    bottom: -10em;
+    left: -10em;
+    /* transform: translate(50%, -50%); */
+    width: 20em;
+    height: 20em;
     border: none;
-    background: #f30000;
-    border-radius: 50%;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
-    box-shadow: -4px 2px black, 2px 0px 0px -1px white inset;
+    opacity: 0;
+    /* box-shadow: -4px 2px black, 2px 0px 0px -1px white inset; */
 
 }
 
@@ -1080,19 +1080,19 @@ html {
 }
 
 
-.showMore .closeBtn button:hover {
+/* .showMore .closeBtn button:hover {
     transform: scale(0.99) translate(50%, -50%);
     background-color: #9d2323;
     box-shadow: -2px 0px black;
-
-}
+} */
 
 
 
 
 .showMore .imgPil {
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 2px solid rgb(231, 231, 231);
     z-index: 80;
@@ -1121,100 +1121,158 @@ html {
 
 
 .showMore .imgPil.pilone {
-    transform: translate(6em, 0.3em);
+    transform: translate(5em, 0.3em);
 }
 
 .showMore .imgPil.piltwo {
 
-    transform: translate(5em, 3em);
-
+    transform: translate(3.5em, 2.5em);
 }
 
 .showMore .imgPil.pilthree {
-    transform: translate(2em, 4em);
+    transform: translate(1em, 4em);
 
 }
 
 .showMore .imgPil.pilfour {
-    transform: translate(-1em, 4em);
+    transform: translate(-1.5em, 4em);
 }
 
 .showMore .imgPil.pilfive {
-    transform: translate(-4em, 2em);
+    transform: translate(-3.5em, 2em);
 
 }
 
 .showMore .imgPil.pilsix {
-    transform: translate(-5em, -1em);
+    transform: translate(-4em, 0em);
 }
 
 .showMore .imgPil.pilseven {
-    transform: translate(-4em, -4em);
+    transform: translate(-3em, -2em);
 }
 
 .showMore .imgPil.pileight {
-    transform: translate(-1em, -6em);
+    transform: translate(-0.5em, -3em);
 }
 
 .showMore .imgPil.pilnine {
-    transform: translate(2em, -6em);
+    transform: translate(2em, -3em);
 }
 
 .showMore .imgPil.pilten {
-    transform: translate(5em, -5em);
+    transform: translate(4em, -2em);
 }
 
 .showMore .imgPil.pileleven {
-    transform: translate(6em, -2.5em);
+    transform: translate(4.5em, -4.5em);
+}
+
+.showMore .imgPil.piltwelve {
+    transform: translate(6.5em, -3em);
+}
+
+.showMore .imgPil.pilthirteen {
+    transform: translate(7.5em, -0.5em);
+}
+
+.showMore .imgPil.pilfourteen {
+    transform: translate(7em, 2.5em);
+}
+
+.showMore .imgPil.pilfifteen {
+    transform: translate(5em, 5em);
+}
+
+.showMore .imgPil.pilsixteen {
+    transform: translate(2em, 6.5em);
+}
+
+.showMore .imgPil.pilseventeen {
+    transform: translate(-1em, 6.5em);
 }
 
 
 
 
 @media(max-width: 1024px) {
-    .showMore .closeBtn button {
-        bottom: 1em;
-        left: 1em;
-        width: 1em;
-        height: 1em;
-        padding: 3px;
-    }
+
 
     .showMore .imgPil {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         border: none;
     }
 
+
     .showMore .imgPil.pilone {
-        transform: translate(3em, 1em);
+        transform: translate(3.5em, 0em);
     }
 
     .showMore .imgPil.piltwo {
 
-        transform: translate(3em, 3em);
-
+        transform: translate(3.5em, 1.5em);
     }
 
     .showMore .imgPil.pilthree {
-        transform: translate(-2em, 1em);
-
+        transform: translate(2em, 2.5em);
 
     }
 
     .showMore .imgPil.pilfour {
-        transform: translate(-1em, -1em);
-
+        transform: translate(0em, 3em);
     }
 
     .showMore .imgPil.pilfive {
-        transform: translate(0em, 3em);
+        transform: translate(-1em, 2em);
 
     }
 
     .showMore .imgPil.pilsix {
-        transform: translate(2em, -1em);
+        transform: translate(-1.5em, 0.5em);
+    }
 
+    .showMore .imgPil.pilseven {
+        transform: translate(-1em, -1em);
+    }
+
+    .showMore .imgPil.pileight {
+        transform: translate(1em, -2em);
+    }
+
+    .showMore .imgPil.pilnine {
+        transform: translate(3em, -1.5em);
+    }
+
+    .showMore .imgPil.pilten {
+        transform: translate(5.5em, 0.5em);
+    }
+
+    .showMore .imgPil.pileleven {
+        transform: translate(5em, 2em);
+    }
+
+    .showMore .imgPil.piltwelve {
+        transform: translate(3.5em, 3.5em);
+    }
+
+    .showMore .imgPil.pilthirteen {
+        transform: translate(2em, 4.5em);
+    }
+
+    .showMore .imgPil.pilfourteen {
+        transform: translate(0em, 4.5em);
+    }
+
+    .showMore .imgPil.pilfifteen {
+        transform: translate(-1.5em, 4em);
+    }
+
+    .showMore .imgPil.pilsixteen {
+        transform: translate(-2.5em, 2.5em);
+    }
+
+    .showMore .imgPil.pilseventeen {
+        transform: translate(-3em, 0.5em);
     }
 }
 
@@ -1286,7 +1344,16 @@ html {
 
 
 .landMarkCards .landmarkCard .card-content {
-    padding: 5px;
+    padding: 10px 15px;
+    direction: rtl;
+}
+
+.landMarkCards .landmarkCard .card-content h3 {
+    border-right: 5px solid #a71b9b;
+    padding-right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(18, 18, 18);
 }
 
 .landMarkCards .landmarkCard .card1 {
@@ -1769,7 +1836,7 @@ html {
 
 .tourism .tourismCard {
     padding: 20px;
-    height: 450px;
+    height: 500px;
     border-radius: 30px;
     background: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -1812,7 +1879,7 @@ html {
 
 .tourism .tourismCard li {
     color: #525252;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 

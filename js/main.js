@@ -135,7 +135,37 @@ function collapse(theCloseBtn, pills) {
         pill.classList.remove("pileleven")
       }, 200)
       
-    }
+    } else if(pill.classList.contains("twelve")) {
+      setTimeout(()=> {
+        pill.classList.remove("piltwelve")
+      }, 200)
+      
+    } else if(pill.classList.contains("thirteen")) {
+      setTimeout(()=> {
+        pill.classList.remove("pilthirteen")
+      }, 200)
+      
+    } else if(pill.classList.contains("fourteen")) {
+      setTimeout(()=> {
+        pill.classList.remove("pilfourteen")
+      }, 200)
+      
+    } else if(pill.classList.contains("fifteen")) {
+      setTimeout(()=> {
+        pill.classList.remove("pilfifteen")
+      }, 200)
+      
+    } else if(pill.classList.contains("sixteen")) {
+      setTimeout(()=> {
+        pill.classList.remove("pilsixteen")
+      }, 200)
+      
+    } else if(pill.classList.contains("seventeen")) {
+      setTimeout(()=> {
+        pill.classList.remove("pilseventeen")
+      }, 200)
+      
+    } 
 
   })
 
@@ -167,6 +197,7 @@ function showMyPills(pills, closBtn) {
     }, 200)
 
     if(pill.classList.contains("one")) {
+      
       setTimeout(()=> {
         pill.classList.add("pilone")
       }, 100)
@@ -230,7 +261,37 @@ function showMyPills(pills, closBtn) {
 
       }, 200)
       
-    }
+    } else if(pill.classList.contains("twelve")) {
+      setTimeout(()=> {
+        pill.classList.add("piltwelve")
+      }, 200)
+      
+    } else if(pill.classList.contains("thirteen")) {
+      setTimeout(()=> {
+        pill.classList.add("pilthirteen")
+      }, 200)
+      
+    } else if(pill.classList.contains("fourteen")) {
+      setTimeout(()=> {
+        pill.classList.add("pilfourteen")
+      }, 200)
+      
+    } else if(pill.classList.contains("fifteen")) {
+      setTimeout(()=> {
+        pill.classList.add("pilfifteen")
+      }, 200)
+      
+    } else if(pill.classList.contains("sixteen")) {
+      setTimeout(()=> {
+        pill.classList.add("pilsixteen")
+      }, 200)
+      
+    } else if(pill.classList.contains("seventeen")) {
+      setTimeout(()=> {
+        pill.classList.add("pilseventeen")
+      }, 200)
+      
+    } 
 
   })
 
@@ -275,3 +336,8 @@ function closeCard(cardName) {
   }, 100)
 
 }
+
+
+
+
+

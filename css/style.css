@@ -272,6 +272,7 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 25px;
 }
 
 
@@ -313,7 +314,7 @@ html {
 
     .map {
         padding: 15px;
-        /* height: 50vh; */
+        height: 50vh;
     }
 
     .map .container {
@@ -357,9 +358,6 @@ html {
     font-weight: bold;
     font-size: 30px;
     color: rgb(255, 255, 255);
-    /* text-shadow: -1px 4px black; */
-    text-transform: uppercase;
-    transform: rotateX(22deg);
     cursor: pointer;
     z-index: 100;
 
@@ -537,7 +535,7 @@ html {
 
 
 
-@media(max-width: 1025px) {
+@media(max-width: 1024px) {
 
     .location {
 
@@ -634,8 +632,10 @@ html {
     .Batin span,
     .Tabuok span,
     .Taif span,
-    .Jeddah span {
-        font-size: 17px;
+    .Jeddah span,
+    .Riyadh span,
+    .Mecca span {
+        font-size: 22px;
     }
 
     .Maddinah span {
@@ -677,7 +677,7 @@ html {
     }
 
     .Dammam {
-        top: 22%;
+        top: 23%;
         left: 60%;
     }
 
@@ -713,14 +713,14 @@ html {
 
 
     .Yanbu {
-        top: 35%;
-        left: 20%;
+        top: 32%;
+        left: 19%;
     }
 
 
     .Mecca {
-        top: 41%;
-        left: 31%;
+        top: 43%;
+        left: 30%;
     }
 
 
@@ -731,8 +731,8 @@ html {
 
 
     .Taif {
-        top: 49%;
-        left: 33%
+        top: 50%;
+        left: 34%;
     }
 
 
@@ -808,7 +808,7 @@ html {
     .location {
 
         top: 37%;
-        left: 45%;
+        left: 47%;
 
     }
 
@@ -832,7 +832,7 @@ html {
 
     .Batin {
         top: 2%;
-        left: 36%;
+        left: 38%;
     }
 
 
@@ -843,19 +843,19 @@ html {
 
 
     .Maddinah {
-        top: 26%;
-        left: 21%;
+        top: 27%;
+        left: 24%;
     }
 
 
     .Yanbu {
         top: 28%;
-        left: 18%;
+        left: 19%;
     }
 
 
     .Mecca {
-        top: 37%;
+        top: 40%;
         left: 29%;
     }
 
@@ -867,14 +867,14 @@ html {
 
 
     .Taif {
-        top: 42%;
-        left: 32%;
+        top: 44%;
+        left: 34%;
     }
 
 
     .Khamis {
         top: 55%;
-        left: 34%;
+        left: 36%;
     }
 
 
@@ -893,6 +893,11 @@ html {
     .Jazan {
         top: 65%;
         left: 38%;
+    }
+
+
+    .Riyadh span {
+        font-size: 18px;
     }
 
 
@@ -1079,13 +1084,6 @@ html {
 }
 
 
-/* .showMore .closeBtn button:hover {
-    transform: scale(0.99) translate(50%, -50%);
-    background-color: #9d2323;
-    box-shadow: -2px 0px black;
-} */
-
-
 
 
 .showMore .imgPil {
@@ -1125,7 +1123,7 @@ html {
 
 .showMore .imgPil.piltwo {
 
-    transform: translate(3.5em, 2.5em);
+    transform: translate(4em, 3em);
 }
 
 .showMore .imgPil.pilthree {
@@ -1295,11 +1293,14 @@ html {
     opacity: 0;
 }
 
+
+
+
 .landMarkCards .landmarkCard {
     background: #ffffff91;
     backdrop-filter: blur(7px);
-    height: 50%;
-    width: 50%;
+    height: 360px;
+    width: 280px;
     z-index: 9999;
     box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
     border-radius: 40px;
@@ -1310,6 +1311,14 @@ html {
     overflow: hidden;
     display: none;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+@media(max-width: 767px) {
+    .landMarkCards .landmarkCard {
+        height: 300px;
+        width: 220px;
+    }
 }
 
 .landMarkCards .landmarkCard .closeCardButton {
@@ -1382,9 +1391,7 @@ html {
 .landMarkCards .landmarkCard p {
     color: black;
     text-shadow: none;
-    font-size: 12px;
-
-
+    font-size: 14px;
 }
 
 .landMarkCards .landmarkCard:hover {
@@ -1395,14 +1402,10 @@ html {
 
 
 
-
-
 .landMarkCards .landmarkCard.showtheCard {
     transform: translateY(0px);
     opacity: 1;
 }
-
-
 
 
 
@@ -1456,7 +1459,7 @@ html {
 }
 
 .KnowCard:hover {
-    transform: rotateY(10deg) rotateX(10deg) scale(0.97);
+    transform: scale(0.97);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -1679,22 +1682,14 @@ html {
 }
 
 
-
-
 .intersection .row {
     min-height: 200px;
+    border-radius: 20px;
 }
 
 
-@media(max-width: 768px) {
-    .intersection {
-        padding: 20px 10px;
-    }
 
-    .intersection .row {
-        min-height: 130px;
-    }
-}
+
 
 
 .interRight {
@@ -1709,7 +1704,7 @@ html {
 
 
 .interleft {
-    background-image: linear-gradient(to bottom, rgb(101 61 0 / 11%), rgb(0 0 0 / 16%)), url("../images/suns-tornado.svg");
+    background-image: linear-gradient(to bottom, rgb(96 0 113 / 30%), rgb(0 0 0 / 19%)), url(../images/suns-tornado.svg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1717,18 +1712,46 @@ html {
 }
 
 
+
+
+.interleft p {
+    font-size: 18px;
+}
+
+.interleft h2 {
+    font-size: 42px;
+}
+
+
+
 @media(max-width: 768px) {
+
+
+    .intersection {
+        padding: 20px 15px;
+    }
+
+    .intersection .row {
+        min-height: 130px;
+    }
+
+
     .intersection .row {
         min-height: 120px;
+    }
+
+    .interleft {
+        direction: rtl;
+        padding: 50px 30px;
+    }
+
+    .interRight {
+        padding: 80px 30px;
     }
 
     .interRight button {
         font-size: 14px;
 
-    }
-
-    .interleft p {
-        font-size: 14px;
     }
 
 }

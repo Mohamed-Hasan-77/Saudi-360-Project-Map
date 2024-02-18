@@ -354,6 +354,11 @@ html {
     height: fit-content;
 }
 
+
+.location img {
+    vertical-align: unset;
+}
+
 .location p {
     font-weight: bold;
     font-size: 30px;
@@ -533,9 +538,139 @@ html {
 
 
 
-
-
 @media(max-width: 1024px) {
+
+    .location {
+
+        top: 40%;
+        left: 50%;
+    }
+
+    .Dammam {
+        top: 26%;
+        left: 62%;
+    }
+
+
+    .Alkhabar {
+        top: 19%;
+        left: 59%;
+    }
+
+    .Buraydah {
+        top: 29%;
+        left: 46%;
+    }
+
+
+
+    .Batin {
+        top: 9%;
+        left: 40%;
+    }
+
+
+    .Tabuok {
+        top: 9%;
+        left: 19%;
+    }
+
+
+    .Maddinah {
+        top: 32%;
+        left: 26%;
+    }
+
+
+    .Yanbu {
+        top: 34%;
+        left: 20%;
+    }
+
+
+    .Mecca {
+        top: 45%;
+        left: 33%;
+    }
+
+
+    .Jeddah {
+        top: 53%;
+        left: 27%;
+    }
+
+
+    .Taif {
+        top: 51%;
+        left: 35%;
+    }
+
+
+    .Khamis {
+        left: 38%;
+        top: 58%;
+    }
+
+
+    .Rabegh {
+        top: 46%;
+        left: 24%;
+    }
+
+
+    .Najran {
+        top: 68%;
+    }
+
+
+    .Jazan {
+        top: 70%;
+        left: 39%;
+    }
+
+
+    .Dammam span,
+    .Alkhabar span,
+    .Buraydah span,
+    .Batin span,
+    .Tabuok span,
+    .Taif span,
+    .Jeddah span,
+    .Riyadh span,
+    .Mecca span {
+        font-size: 22px;
+    }
+
+    .Maddinah span {
+        font-size: 15px;
+    }
+
+    .Yanbu span,
+    .Khamis span,
+    .Rabegh span,
+    .Najran span,
+    .Jazan span {
+        font-size: 14px;
+    }
+
+
+    .locate {
+        margin: 15px auto;
+    }
+
+    .locate::after {
+        width: 10px;
+        height: 10px;
+        border: 3px solid red;
+        left: 2px;
+        bottom: -11px;
+    }
+
+}
+
+
+
+@media(max-width: 1023px) {
 
     .location {
 
@@ -544,8 +679,8 @@ html {
     }
 
     .Dammam {
-        top: 20%;
-        left: 60%;
+        top: 22%;
+        left: 61%;
     }
 
 
@@ -559,11 +694,9 @@ html {
         left: 45%;
     }
 
-
-
     .Batin {
-        top: 5%;
-        left: 37%;
+        top: 6%;
+        left: 39%;
     }
 
 
@@ -574,8 +707,8 @@ html {
 
 
     .Maddinah {
-        top: 25%;
-        left: 24%;
+        top: 28%;
+        left: 25%;
     }
 
 
@@ -586,7 +719,7 @@ html {
 
 
     .Mecca {
-        top: 40%;
+        top: 41%;
         left: 31%;
     }
 
@@ -1101,14 +1234,23 @@ html {
     transform: translate(0em, -1em);
     overflow: hidden;
     transition: all 0.7s ease-in-out;
+}
 
 
+
+.showMore .imgPilSizeSix {
+    width: 50px;
+    height: 50px;
+}
+
+.showMore .imgPilSizeEight {
+    width: 45px;
+    height: 45px;
 }
 
 .showMore .imgPil img {
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
-
 }
 
 .showMore .imgPil:hover img {
@@ -1118,75 +1260,254 @@ html {
 
 
 .showMore .imgPil.pilone {
-    transform: translate(5em, 0.3em);
+    transform: translate(6em, 0.3em);
 }
 
 .showMore .imgPil.piltwo {
 
-    transform: translate(4em, 3em);
+    transform: translate(5.5em, 2.5em);
 }
 
 .showMore .imgPil.pilthree {
-    transform: translate(1em, 4em);
+    transform: translate(3em, 4em);
 
 }
 
 .showMore .imgPil.pilfour {
-    transform: translate(-1.5em, 4em);
+    transform: translate(0em, 4em);
 }
 
 .showMore .imgPil.pilfive {
-    transform: translate(-3.5em, 2em);
+    transform: translate(-2.5em, 2.5em);
 
 }
 
 .showMore .imgPil.pilsix {
-    transform: translate(-4em, 0em);
+    transform: translate(-3em, 0em);
 }
 
 .showMore .imgPil.pilseven {
-    transform: translate(-3em, -2em);
+    transform: translate(-2em, -2em);
 }
 
 .showMore .imgPil.pileight {
-    transform: translate(-0.5em, -3em);
+    transform: translate(0.5em, -3em);
 }
 
 .showMore .imgPil.pilnine {
-    transform: translate(2em, -3em);
+    transform: translate(3em, -3em);
 }
 
 .showMore .imgPil.pilten {
-    transform: translate(4em, -2em);
+    transform: translate(5em, -2em);
 }
 
 .showMore .imgPil.pileleven {
-    transform: translate(4.5em, -4.5em);
+    transform: translate(5.5em, -4.5em);
 }
 
 .showMore .imgPil.piltwelve {
-    transform: translate(6.5em, -3em);
+    transform: translate(7.5em, -3em);
 }
 
 .showMore .imgPil.pilthirteen {
-    transform: translate(7.5em, -0.5em);
+    transform: translate(8.5em, -0.5em);
 }
 
 .showMore .imgPil.pilfourteen {
-    transform: translate(7em, 2.5em);
+    transform: translate(8em, 2.5em);
 }
 
 .showMore .imgPil.pilfifteen {
-    transform: translate(5em, 5em);
+    transform: translate(6em, 5em);
 }
 
 .showMore .imgPil.pilsixteen {
-    transform: translate(2em, 6.5em);
+    transform: translate(3em, 6.5em);
 }
 
 .showMore .imgPil.pilseventeen {
     transform: translate(-1em, 6.5em);
 }
+
+
+
+
+/*  Eight thumbnail setup */
+
+.showMore .imgPil.piloneEightThumb {
+    transform: translate(6em, 0em);
+}
+
+.showMore .imgPil.piltwoEightThumb {
+
+    transform: translate(3.5em, 3em);
+}
+
+.showMore .imgPil.pilthreeEightThumb {
+    transform: translate(-0.5em, 3.5em);
+}
+
+.showMore .imgPil.pilfourEightThumb {
+    transform: translate(-4em, 2em);
+}
+
+.showMore .imgPil.pilfiveEightThumb {
+    transform: translate(-4.5em, -1.5em);
+}
+
+.showMore .imgPil.pilSixEightThumb {
+    transform: translate(-2.5em, -5em);
+}
+
+.showMore .imgPil.pilSevenEightThumb {
+    transform: translate(1.5em, -5.5em);
+}
+
+.showMore .imgPil.pilEightEightThumb {
+    transform: translate(5em, -3.5em);
+}
+
+
+
+
+/*  Seven thumbnail setup */
+
+.showMore .imgPil.piloneSevenThumb {
+    transform: translate(4em, 0em);
+}
+
+.showMore .imgPil.piltwoSevenThumb {
+
+    transform: translate(2.5em, 3em);
+}
+
+.showMore .imgPil.pilthreeSevenThumb {
+    transform: translate(-1.5em, 3.5em);
+}
+
+.showMore .imgPil.pilfourSevenThumb {
+    transform: translate(-4em, 1em);
+}
+
+.showMore .imgPil.pilfiveSevenThumb {
+    transform: translate(-3.5em, -2.5em);
+}
+
+.showMore .imgPil.pilSixSevenThumb {
+    transform: translate(0em, -4em);
+}
+
+.showMore .imgPil.pilSevenSevenThumb {
+    transform: translate(3em, -3em);
+}
+
+
+
+
+/*  six thumbnail setup */
+
+.showMore .imgPil.piloneSixThumb {
+    transform: translate(5em, 0em);
+}
+
+.showMore .imgPil.piltwoSixThumb {
+
+    transform: translate(3em, 3.5em);
+}
+
+.showMore .imgPil.pilthreeSixThumb {
+    transform: translate(-1em, 3.5em);
+}
+
+.showMore .imgPil.pilfourSixThumb {
+    transform: translate(-4em, 0em);
+}
+
+.showMore .imgPil.pilfiveSixThumb {
+    transform: translate(-1em, -4em);
+}
+
+.showMore .imgPil.pilsixSixThumb {
+    transform: translate(3em, -4em);
+}
+
+
+/*  Five thumbnail setup */
+
+.showMore .imgPil.piloneFiveThumb {
+    transform: translate(5em, -1em);
+}
+
+.showMore .imgPil.piltwoFiveThumb {
+
+    transform: translate(3em, 3.5em);
+}
+
+.showMore .imgPil.pilthreeFiveThumb {
+    transform: translate(-1.5em, 3.5em);
+}
+
+.showMore .imgPil.pilfourFiveThumb {
+    transform: translate(-4.5em, -1em);
+}
+
+.showMore .imgPil.pilfiveFiveThumb {
+    transform: translate(0.5em, -4em);
+}
+
+
+/*  Four thumbnail setup */
+
+.showMore .imgPil.piloneFourThumb {
+    transform: translate(6em, -1em);
+}
+
+.showMore .imgPil.piltwoFourThumb {
+
+    transform: translate(1.5em, 3.5em);
+}
+
+.showMore .imgPil.pilthreeFourThumb {
+    transform: translate(-3.5em, -0.5em);
+}
+
+.showMore .imgPil.pilfourFourThumb {
+    transform: translate(1.5em, -4em);
+}
+
+
+
+/*  Three thumbnail setup */
+
+.showMore .imgPil.piloneThreeThumb {
+    transform: translate(0em, -4em);
+}
+
+.showMore .imgPil.piltwoThreeThumb {
+
+    transform: translate(3.5em, 1em);
+}
+
+.showMore .imgPil.pilthreeThreeThumb {
+    transform: translate(-4em, 1em);
+}
+
+
+
+/*  Two thumbnail setup */
+
+.showMore .imgPil.piloneTwoThumb {
+    transform: translate(1em, -4em);
+}
+
+.showMore .imgPil.piltwoTwoThumb {
+
+    transform: translate(2.5em, 3em);
+}
+
+
+
 
 
 
@@ -1271,8 +1592,303 @@ html {
     .showMore .imgPil.pilseventeen {
         transform: translate(-3em, 0.5em);
     }
+
+
+
+
+    .showMore .imgPilSizeSix {
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+
+
+    /*  Six thumbnail setup */
+
+
+    .showMore .imgPil.piloneSixThumb {
+        transform: translate(3.5em, 0em);
+    }
+
+    .showMore .imgPil.piltwoSixThumb {
+
+        transform: translate(2.5em, 3em);
+    }
+
+    .showMore .imgPil.pilthreeSixThumb {
+        transform: translate(-1em, 3em);
+    }
+
+    .showMore .imgPil.pilfourSixThumb {
+        transform: translate(-3em, 0em);
+    }
+
+    .showMore .imgPil.pilfiveSixThumb {
+        transform: translate(-1em, -3em);
+    }
+
+    .showMore .imgPil.pilsixSixThumb {
+        transform: translate(2em, -3em);
+    }
+
+
+
+
+    /*  Five thumbnail setup */
+
+    .showMore .imgPil.piloneFiveThumb {
+        transform: translate(4em, -1em);
+    }
+
+    .showMore .imgPil.piltwoFiveThumb {
+
+        transform: translate(2em, 2.5em);
+    }
+
+    .showMore .imgPil.pilthreeFiveThumb {
+        transform: translate(-1.5em, 2.5em);
+    }
+
+    .showMore .imgPil.pilfourFiveThumb {
+        transform: translate(-3.5em, -1em);
+    }
+
+    .showMore .imgPil.pilfiveFiveThumb {
+        transform: translate(0.5em, -3em);
+    }
+
+
+    /*  Four thumbnail setup */
+
+    .showMore .imgPil.piloneFourThumb {
+        transform: translate(4.5em, 0em);
+    }
+
+    .showMore .imgPil.piltwoFourThumb {
+
+        transform: translate(0.5em, 3em);
+    }
+
+    .showMore .imgPil.pilthreeFourThumb {
+        transform: translate(-3.5em, -0em);
+    }
+
+    .showMore .imgPil.pilfourFourThumb {
+        transform: translate(0.5em, -3em);
+    }
+
+
+    /*  Three thumbnail setup */
+
+    .showMore .imgPil.piloneThreeThumb {
+        transform: translate(0em, -3em);
+    }
+
+    .showMore .imgPil.piltwoThreeThumb {
+
+        transform: translate(2.5em, 1em);
+    }
+
+    .showMore .imgPil.pilthreeThreeThumb {
+        transform: translate(-3em, 1em);
+    }
+
+
 }
 
+
+
+@media(max-width: 767px) {
+
+
+
+    .showMore .imgPilSizeEight {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /*  Eight thumbnail setup */
+
+    .showMore .imgPil.piloneEightThumb {
+        transform: translate(3.5em, 0em);
+    }
+
+    .showMore .imgPil.piltwoEightThumb {
+
+        transform: translate(2em, 2.5em);
+    }
+
+    .showMore .imgPil.pilthreeEightThumb {
+        transform: translate(-0.5em, 3em);
+    }
+
+    .showMore .imgPil.pilfourEightThumb {
+        transform: translate(-3em, 2em);
+    }
+
+    .showMore .imgPil.pilfiveEightThumb {
+        transform: translate(-4em, -0em);
+    }
+
+    .showMore .imgPil.pilSixEightThumb {
+        transform: translate(-3em, -2.5em);
+    }
+
+    .showMore .imgPil.pilSevenEightThumb {
+        transform: translate(0em, -3.5em);
+    }
+
+    .showMore .imgPil.pilEightEightThumb {
+        transform: translate(2.5em, -2.5em);
+    }
+
+
+
+    /*  Seven thumbnail setup */
+
+    .showMore .imgPil.piloneSevenThumb {
+        transform: translate(3em, 0em);
+    }
+
+    .showMore .imgPil.piltwoSevenThumb {
+
+        transform: translate(1.5em, 2em);
+    }
+
+    .showMore .imgPil.pilthreeSevenThumb {
+        transform: translate(-1em, 2.5em);
+    }
+
+    .showMore .imgPil.pilfourSevenThumb {
+        transform: translate(-3em, 1em);
+    }
+
+    .showMore .imgPil.pilfiveSevenThumb {
+        transform: translate(-2.5em, -2em);
+    }
+
+    .showMore .imgPil.pilSixSevenThumb {
+        transform: translate(0em, -3em);
+    }
+
+    .showMore .imgPil.pilSevenSevenThumb {
+        transform: translate(2em, -2em);
+    }
+
+
+
+
+    /*  Six thumbnail setup */
+
+
+    .showMore .imgPil.piloneSixThumb {
+        transform: translate(2.5em, 0.5em);
+    }
+
+    .showMore .imgPil.piltwoSixThumb {
+
+        transform: translate(1em, 2.5em);
+    }
+
+    .showMore .imgPil.pilthreeSixThumb {
+        transform: translate(-2em, 2em);
+    }
+
+    .showMore .imgPil.pilfourSixThumb {
+        transform: translate(-3em, -0.5em);
+    }
+
+    .showMore .imgPil.pilfiveSixThumb {
+        transform: translate(-1em, -2.5em);
+    }
+
+    .showMore .imgPil.pilsixSixThumb {
+        transform: translate(2em, -2em);
+    }
+
+
+
+
+    /*  Five thumbnail setup */
+
+    .showMore .imgPil.piloneFiveThumb {
+        transform: translate(3em, 0em);
+    }
+
+    .showMore .imgPil.piltwoFiveThumb {
+
+        transform: translate(1.5em, 2.5em);
+    }
+
+    .showMore .imgPil.pilthreeFiveThumb {
+        transform: translate(-1.5em, 2.5em);
+    }
+
+    .showMore .imgPil.pilfourFiveThumb {
+        transform: translate(-2.5em, -0.5em);
+    }
+
+    .showMore .imgPil.pilfiveFiveThumb {
+        transform: translate(0.5em, -2.5em);
+    }
+
+
+    /*  Four thumbnail setup */
+
+    .showMore .imgPil.piloneFourThumb {
+        transform: translate(3.5em, 0.5em);
+    }
+
+    .showMore .imgPil.piltwoFourThumb {
+
+        transform: translate(0.5em, 3em);
+    }
+
+    .showMore .imgPil.pilthreeFourThumb {
+        transform: translate(-2.5em, 0.5em);
+    }
+
+    .showMore .imgPil.pilfourFourThumb {
+        transform: translate(0.5em, -2em);
+    }
+
+
+    /*  Three thumbnail setup */
+
+    .showMore .imgPil.piloneThreeThumb {
+        transform: translate(0em, -2em);
+    }
+
+    .showMore .imgPil.piltwoThreeThumb {
+
+        transform: translate(2em, 1em);
+    }
+
+    .showMore .imgPil.pilthreeThreeThumb {
+        transform: translate(-2em, 1em);
+    }
+
+
+    /*  Two thumbnail setup */
+
+    .showMore .imgPil.piloneTwoThumb {
+        transform: translate(1em, -2em);
+    }
+
+    .showMore .imgPil.piltwoTwoThumb {
+
+        transform: translate(1.5em, 2em);
+    }
+
+
+    .showMore .imgPilSizeSix {
+        width: 30px;
+        height: 30px;
+        border: none;
+    }
+
+}
 
 
 
@@ -1301,7 +1917,7 @@ html {
     backdrop-filter: blur(7px);
     height: 360px;
     width: 280px;
-    z-index: 9999;
+    z-index: 99999;
     box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
     border-radius: 40px;
     flex-direction: column;
@@ -1314,12 +1930,7 @@ html {
 }
 
 
-@media(max-width: 767px) {
-    .landMarkCards .landmarkCard {
-        height: 300px;
-        width: 220px;
-    }
-}
+
 
 .landMarkCards .landmarkCard .closeCardButton {
 
@@ -1392,6 +2003,12 @@ html {
     color: black;
     text-shadow: none;
     font-size: 14px;
+    font-weight: bold;
+}
+
+
+.landMarkCards .landmarkCard .go-arrow img {
+    height: 30px;
 }
 
 .landMarkCards .landmarkCard:hover {
@@ -1409,6 +2026,31 @@ html {
 
 
 
+
+@media(max-width: 767px) {
+    .landMarkCards .landmarkCard {
+        height: 300px;
+        width: 220px;
+    }
+
+
+    .landMarkCards .landmarkCard p {
+        font-size: 13px;
+    }
+}
+
+
+@media(max-width: 380px) {
+    .landMarkCards .landmarkCard {
+        height: 270px;
+        width: 190px;
+    }
+
+    .landMarkCards .landmarkCard p {
+        font-size: 12px;
+    }
+
+}
 
 
 
@@ -1483,10 +2125,10 @@ html {
     width: 40px;
     height: 30px;
     overflow: hidden;
-    top: 0;
+    top: 2px;
     right: 8px;
     background-color: var(--mainBackCards);
-    border-radius: 0 4px 0 32px;
+    border-radius: 0 4px 0 20px;
 }
 
 .go-arrow {
@@ -1520,7 +2162,7 @@ html {
     right: -16px;
     background: var(--mainBackCards);
     height: 32px;
-    width: 65px;
+    width: 72px;
     padding: 23px;
     border-radius: 32px;
     transform: scale(1);

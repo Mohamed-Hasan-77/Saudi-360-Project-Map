@@ -351,6 +351,10 @@ html {
     height: fit-content;
 }
 
+.location img {
+    vertical-align: unset;
+}
+
 .location p {
     font-weight: bold;
     font-size: 18px;
@@ -1258,11 +1262,24 @@ html {
 
 }
 
+
+
+
 .showMore .imgPil:hover img {
     transform: scale(1.3);
     filter: brightness(1.2);
 }
 
+
+.showMore .imgPilSizeSix {
+    width: 50px;
+    height: 50px;
+}
+
+.showMore .imgPilSizeEight {
+    width: 45px;
+    height: 45px;
+}
 
 .showMore .imgPil.pilone {
     transform: translate(5em, 0.3em);
@@ -1338,6 +1355,180 @@ html {
 
 
 
+/*  Eight thumbnail setup */
+
+.showMore .imgPil.piloneEightThumb {
+    transform: translate(6em, 0em);
+}
+
+.showMore .imgPil.piltwoEightThumb {
+
+    transform: translate(3.5em, 3em);
+}
+
+.showMore .imgPil.pilthreeEightThumb {
+    transform: translate(-0.5em, 3.5em);
+}
+
+.showMore .imgPil.pilfourEightThumb {
+    transform: translate(-4em, 2em);
+}
+
+.showMore .imgPil.pilfiveEightThumb {
+    transform: translate(-4.5em, -1.5em);
+}
+
+.showMore .imgPil.pilSixEightThumb {
+    transform: translate(-2.5em, -5em);
+}
+
+.showMore .imgPil.pilSevenEightThumb {
+    transform: translate(1.5em, -5.5em);
+}
+
+.showMore .imgPil.pilEightEightThumb {
+    transform: translate(5em, -3.5em);
+}
+
+
+
+
+
+/*  Seven thumbnail setup */
+
+.showMore .imgPil.piloneSevenThumb {
+    transform: translate(4em, 0em);
+}
+
+.showMore .imgPil.piltwoSevenThumb {
+
+    transform: translate(2.5em, 3em);
+}
+
+.showMore .imgPil.pilthreeSevenThumb {
+    transform: translate(-1.5em, 3.5em);
+}
+
+.showMore .imgPil.pilfourSevenThumb {
+    transform: translate(-4em, 1em);
+}
+
+.showMore .imgPil.pilfiveSevenThumb {
+    transform: translate(-3.5em, -2.5em);
+}
+
+.showMore .imgPil.pilSixSevenThumb {
+    transform: translate(0em, -4em);
+}
+
+.showMore .imgPil.pilSevenSevenThumb {
+    transform: translate(3em, -3em);
+}
+
+
+
+
+/*  six thumbnail setup */
+
+.showMore .imgPil.piloneSixThumb {
+    transform: translate(5em, 0em);
+}
+
+.showMore .imgPil.piltwoSixThumb {
+
+    transform: translate(3em, 3.5em);
+}
+
+.showMore .imgPil.pilthreeSixThumb {
+    transform: translate(-1em, 3.5em);
+}
+
+.showMore .imgPil.pilfourSixThumb {
+    transform: translate(-4em, 0em);
+}
+
+.showMore .imgPil.pilfiveSixThumb {
+    transform: translate(-1em, -4em);
+}
+
+.showMore .imgPil.pilsixSixThumb {
+    transform: translate(3em, -4em);
+}
+
+
+/*  Five thumbnail setup */
+
+.showMore .imgPil.piloneFiveThumb {
+    transform: translate(5em, -1em);
+}
+
+.showMore .imgPil.piltwoFiveThumb {
+
+    transform: translate(3em, 3.5em);
+}
+
+.showMore .imgPil.pilthreeFiveThumb {
+    transform: translate(-1.5em, 3.5em);
+}
+
+.showMore .imgPil.pilfourFiveThumb {
+    transform: translate(-4.5em, -1em);
+}
+
+.showMore .imgPil.pilfiveFiveThumb {
+    transform: translate(0.5em, -4em);
+}
+
+
+/*  Four thumbnail setup */
+
+.showMore .imgPil.piloneFourThumb {
+    transform: translate(6em, -1em);
+}
+
+.showMore .imgPil.piltwoFourThumb {
+
+    transform: translate(1.5em, 3.5em);
+}
+
+.showMore .imgPil.pilthreeFourThumb {
+    transform: translate(-3.5em, -0.5em);
+}
+
+.showMore .imgPil.pilfourFourThumb {
+    transform: translate(1.5em, -4em);
+}
+
+
+
+/*  Three thumbnail setup */
+
+.showMore .imgPil.piloneThreeThumb {
+    transform: translate(0em, -4em);
+}
+
+.showMore .imgPil.piltwoThreeThumb {
+
+    transform: translate(3.5em, 1em);
+}
+
+.showMore .imgPil.pilthreeThreeThumb {
+    transform: translate(-4em, 1em);
+}
+
+
+/*  Two thumbnail setup */
+
+.showMore .imgPil.piloneTwoThumb {
+    transform: translate(1em, -4em);
+}
+
+.showMore .imgPil.piltwoTwoThumb {
+
+    transform: translate(2.5em, 3em);
+}
+
+
 @media(max-width: 1024px) {
 
 
@@ -1345,6 +1536,11 @@ html {
         width: 20px;
         height: 20px;
         border: none;
+    }
+
+    .showMore .imgPilSizeEight {
+        width: 40px;
+        height: 40px;
     }
 
 
@@ -1418,10 +1614,303 @@ html {
     .showMore .imgPil.pilseventeen {
         transform: translate(-3em, 0.5em);
     }
+
+
+
+
+
+    .showMore .imgPilSizeSix {
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+
+
+
+    /*  Six thumbnail setup */
+
+
+    .showMore .imgPil.piloneSixThumb {
+        transform: translate(4.5em, 0em);
+    }
+
+    .showMore .imgPil.piltwoSixThumb {
+
+        transform: translate(2.5em, 3em);
+    }
+
+    .showMore .imgPil.pilthreeSixThumb {
+        transform: translate(-1em, 3em);
+    }
+
+    .showMore .imgPil.pilfourSixThumb {
+        transform: translate(-3em, 0em);
+    }
+
+    .showMore .imgPil.pilfiveSixThumb {
+        transform: translate(-1em, -3em);
+    }
+
+    .showMore .imgPil.pilsixSixThumb {
+        transform: translate(2em, -3em);
+    }
+
+
+
+
+    /*  Five thumbnail setup */
+
+    .showMore .imgPil.piloneFiveThumb {
+        transform: translate(4em, -1em);
+    }
+
+    .showMore .imgPil.piltwoFiveThumb {
+
+        transform: translate(2em, 2.5em);
+    }
+
+    .showMore .imgPil.pilthreeFiveThumb {
+        transform: translate(-1.5em, 2.5em);
+    }
+
+    .showMore .imgPil.pilfourFiveThumb {
+        transform: translate(-3.5em, -1em);
+    }
+
+    .showMore .imgPil.pilfiveFiveThumb {
+        transform: translate(0.5em, -3em);
+    }
+
+
+    /*  Four thumbnail setup */
+
+    .showMore .imgPil.piloneFourThumb {
+        transform: translate(4.5em, 0em);
+    }
+
+    .showMore .imgPil.piltwoFourThumb {
+
+        transform: translate(0.5em, 3em);
+    }
+
+    .showMore .imgPil.pilthreeFourThumb {
+        transform: translate(-3.5em, -0em);
+    }
+
+    .showMore .imgPil.pilfourFourThumb {
+        transform: translate(0.5em, -3em);
+    }
+
+
+    /*  Three thumbnail setup */
+
+    .showMore .imgPil.piloneThreeThumb {
+        transform: translate(0em, -3em);
+    }
+
+    .showMore .imgPil.piltwoThreeThumb {
+
+        transform: translate(2.5em, 1em);
+    }
+
+    .showMore .imgPil.pilthreeThreeThumb {
+        transform: translate(-3em, 1em);
+    }
+
+
 }
 
 
 
+@media(max-width: 767px) {
+
+
+    .showMore .imgPilSizeEight {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /*  Eight thumbnail setup */
+
+    .showMore .imgPil.piloneEightThumb {
+        transform: translate(3.5em, 0em);
+    }
+
+    .showMore .imgPil.piltwoEightThumb {
+
+        transform: translate(2em, 2.5em);
+    }
+
+    .showMore .imgPil.pilthreeEightThumb {
+        transform: translate(-0.5em, 3em);
+    }
+
+    .showMore .imgPil.pilfourEightThumb {
+        transform: translate(-3em, 2em);
+    }
+
+    .showMore .imgPil.pilfiveEightThumb {
+        transform: translate(-4em, -0em);
+    }
+
+    .showMore .imgPil.pilSixEightThumb {
+        transform: translate(-3em, -2.5em);
+    }
+
+    .showMore .imgPil.pilSevenEightThumb {
+        transform: translate(0em, -3.5em);
+    }
+
+    .showMore .imgPil.pilEightEightThumb {
+        transform: translate(2.5em, -2.5em);
+    }
+
+
+    /*  Seven thumbnail setup */
+
+    .showMore .imgPil.piloneSevenThumb {
+        transform: translate(3em, 0em);
+    }
+
+    .showMore .imgPil.piltwoSevenThumb {
+
+        transform: translate(1.5em, 2em);
+    }
+
+    .showMore .imgPil.pilthreeSevenThumb {
+        transform: translate(-1em, 2.5em);
+    }
+
+    .showMore .imgPil.pilfourSevenThumb {
+        transform: translate(-3em, 0.5em);
+    }
+
+    .showMore .imgPil.pilfiveSevenThumb {
+        transform: translate(-2.5em, -2em);
+    }
+
+    .showMore .imgPil.pilSixSevenThumb {
+        transform: translate(0em, -3em);
+    }
+
+    .showMore .imgPil.pilSevenSevenThumb {
+        transform: translate(2em, -2em);
+    }
+
+
+
+
+    /*  Six thumbnail setup */
+
+
+    .showMore .imgPil.piloneSixThumb {
+        transform: translate(3em, 0em);
+    }
+
+    .showMore .imgPil.piltwoSixThumb {
+
+        transform: translate(1.5em, 2em);
+    }
+
+    .showMore .imgPil.pilthreeSixThumb {
+        transform: translate(-1em, 2em);
+    }
+
+    .showMore .imgPil.pilfourSixThumb {
+        transform: translate(-2.5em, 0em);
+    }
+
+    .showMore .imgPil.pilfiveSixThumb {
+        transform: translate(-1em, -2.5em);
+    }
+
+    .showMore .imgPil.pilsixSixThumb {
+        transform: translate(2em, -2.5em);
+    }
+
+
+
+
+    /*  Five thumbnail setup */
+
+    .showMore .imgPil.piloneFiveThumb {
+        transform: translate(3em, 0em);
+    }
+
+    .showMore .imgPil.piltwoFiveThumb {
+
+        transform: translate(1.5em, 2.5em);
+    }
+
+    .showMore .imgPil.pilthreeFiveThumb {
+        transform: translate(-1.5em, 2.5em);
+    }
+
+    .showMore .imgPil.pilfourFiveThumb {
+        transform: translate(-2.5em, -0.5em);
+    }
+
+    .showMore .imgPil.pilfiveFiveThumb {
+        transform: translate(0.5em, -2.5em);
+    }
+
+
+    /*  Four thumbnail setup */
+
+    .showMore .imgPil.piloneFourThumb {
+        transform: translate(3.5em, 0.5em);
+    }
+
+    .showMore .imgPil.piltwoFourThumb {
+
+        transform: translate(0.5em, 2.5em);
+    }
+
+    .showMore .imgPil.pilthreeFourThumb {
+        transform: translate(-2.5em, 0.5em);
+    }
+
+    .showMore .imgPil.pilfourFourThumb {
+        transform: translate(0.5em, -2em);
+    }
+
+
+    /*  Three thumbnail setup */
+
+    .showMore .imgPil.piloneThreeThumb {
+        transform: translate(0em, -1.5em);
+    }
+
+    .showMore .imgPil.piltwoThreeThumb {
+
+        transform: translate(2em, 2em);
+    }
+
+    .showMore .imgPil.pilthreeThreeThumb {
+        transform: translate(-2em, 2em);
+    }
+
+
+    /*  Two thumbnail setup */
+
+    .showMore .imgPil.piloneTwoThumb {
+        transform: translate(0em, -2em);
+    }
+
+    .showMore .imgPil.piltwoTwoThumb {
+
+        transform: translate(0.5em, 2em);
+    }
+
+
+    .showMore .imgPilSizeSix {
+        width: 30px;
+        height: 30px;
+        border: none;
+    }
+
+}
 
 
 /* --------------  location Cards -------------- */
@@ -1465,6 +1954,12 @@ html {
     color: black;
     text-shadow: none;
     font-size: 12px;
+    font-weight: bold;
+}
+
+
+.landMarkCards .landmarkCard .go-arrow img {
+    height: 30px;
 }
 
 
@@ -1476,7 +1971,6 @@ html {
 
 
     .landMarkCards .landmarkCard p {
-
         font-size: 9px;
     }
 }
@@ -1546,6 +2040,19 @@ html {
 
 .landMarkCards .landmarkCard .img img {
     border-radius: 30px 30px 7px 8px;
+}
+
+
+.landmarkCard .go-corner {
+    top: 2px;
+    right: 9px;
+    border-radius: 0 4px 0 20px;
+}
+
+
+.landmarkCard .card1:before {
+    content: "";
+    width: 72px;
 }
 
 
@@ -1649,10 +2156,10 @@ html {
     width: 40px;
     height: 30px;
     overflow: hidden;
-    top: 0;
-    right: 8px;
+    top: 2px;
+    right: 7px;
     background-color: var(--mainBackCards);
-    border-radius: 0 4px 0 32px;
+    border-radius: 0 4px 0 20px;
 }
 
 .go-arrow {

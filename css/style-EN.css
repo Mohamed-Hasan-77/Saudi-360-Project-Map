@@ -1353,6 +1353,44 @@ html {
 }
 
 
+/*  nine thumbnail setup */
+
+.showMore .imgPil.piloneNineThumb {
+    transform: translate(5.5em, 0em);
+}
+
+.showMore .imgPil.piltwoNineThumb {
+
+    transform: translate(4.5em, 3em);
+}
+
+.showMore .imgPil.pilthreeNineThumb {
+    transform: translate(1.5em, 4em);
+}
+
+.showMore .imgPil.pilfourNineThumb {
+    transform: translate(-1.5em, 4em);
+}
+
+.showMore .imgPil.pilfiveNineThumb {
+    transform: translate(-3.5em, 2em);
+}
+
+.showMore .imgPil.pilSixNineThumb {
+    transform: translate(-3.5em, -1em);
+}
+
+.showMore .imgPil.pilSevenNineThumb {
+    transform: translate(-1.5em, -3.5em);
+}
+
+.showMore .imgPil.pilEightNineThumb {
+    transform: translate(1.5em, -4em);
+}
+
+.showMore .imgPil.pilNineNineThumb {
+    transform: translate(4.5em, -3em);
+}
 
 
 /*  Eight thumbnail setup */
@@ -1933,8 +1971,8 @@ html {
 
 
 .landMarkCards .landmarkCard {
-    background: #ffffff91;
-    backdrop-filter: blur(7px);
+    background: #ffffff;
+    /* backdrop-filter: blur(7px); */
     height: 360px;
     width: 280px;
     z-index: 9999;

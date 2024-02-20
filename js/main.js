@@ -17,6 +17,15 @@ window.onscroll = () => {
 };
 
 
+
+
+
+
+
+
+
+
+
 function showpills(cityName) {
 
   let pilsClaseName = "." + cityName +` .imgPil`;
@@ -32,7 +41,9 @@ function showpills(cityName) {
     showMyPillsSix(pills, closBtn) 
   }else if(pills.length == 7) {
     showMyPillsSeven(pills, closBtn)
-  } else if(pills.length == 8) {
+  }  else if(pills.length == 9) {
+    showMyPillsNine(pills, closBtn)
+  }  else if(pills.length == 8) {
     showMyPillsEight(pills, closBtn)
   } else if(pills.length == 4) {
     showMyPillsFour(pills, closBtn)
@@ -167,6 +178,77 @@ function collapse(theCloseBtn, pills) {
 
   })
 
+
+
+     //  Collapse if nine thumb 
+
+     mypills.forEach((pill) => {
+
+      pill.style.display = 'block';
+      setTimeout(()=> {
+        pill.style.opacity = '1';
+      }, 200)
+  
+      if(pill.classList.contains("one")) {
+        
+        setTimeout(()=> {
+          pill.classList.remove("piloneNineThumb")
+          pill.classList.remove("imgPilSizeEight")
+        }, 200)
+      } else if(pill.classList.contains("two")) {
+        setTimeout(()=> {
+          pill.classList.remove("piltwoNineThumb")
+          pill.classList.remove("imgPilSizeEight")
+  
+        },200)
+    
+      } else if(pill.classList.contains("three")) {
+        setTimeout(()=> {
+          pill.classList.remove("pilthreeNineThumb")
+          pill.classList.remove("imgPilSizeEight")
+  
+        },200)
+        
+      } else if(pill.classList.contains("four")) {
+        setTimeout(()=> {
+          pill.classList.remove("pilfourNineThumb")
+          pill.classList.remove("imgPilSizeEight")
+  
+        },200)
+        
+      } else if(pill.classList.contains("five")) {
+        setTimeout(()=> {
+          pill.classList.remove("pilfiveNineThumb")
+          pill.classList.remove("imgPilSizeEight")
+  
+        },200)
+        
+      }  else if(pill.classList.contains("six")) {
+        setTimeout(()=> {
+          pill.classList.remove("pilSixNineThumb")
+          pill.classList.remove("imgPilSizeEight")
+  
+        },200)
+        
+      }  else if(pill.classList.contains("seven")) {
+        setTimeout(()=> {
+          pill.classList.remove("pilSevenNineThumb")
+          pill.classList.remove("imgPilSizeEight")
+  
+        },200)
+       }  else if(pill.classList.contains("eight")) {
+          setTimeout(()=> {
+            pill.classList.remove("pilEightNineThumb")
+            pill.classList.remove("imgPilSizeEight")
+          },200)
+     }  else if(pill.classList.contains("nine")) {
+            setTimeout(()=> {
+              pill.classList.remove("pilNineNineThumb")
+              pill.classList.remove("imgPilSizeEight")
+      
+            },200) }
+  
+    })
 
 
   //  Collapse if Eight thumb 
@@ -503,6 +585,9 @@ function collapse(theCloseBtn, pills) {
     }
 
   })
+
+
+
 
 }
 
@@ -1038,11 +1123,91 @@ function showMyPillsEight(pills, closBtn) {
 }
 
 
+function showMyPillsNine(pills, closBtn) {
+
+  setTimeout(()=> {
+    closBtn.style.opacity = '1';
+  }, 200)
+
+  setTimeout(()=> {
+    closBtn.style.display = 'block';
+  }, 400)
+
+  pills.forEach((pill) => {
+
+    pill.style.display = 'block';
+    setTimeout(()=> {
+      pill.style.opacity = '1';
+    }, 200)
+
+    if(pill.classList.contains("one")) {
+      
+      setTimeout(()=> {
+        pill.classList.add("piloneNineThumb")
+        pill.classList.add("imgPilSizeEight")
+      }, 200)
+    } else if(pill.classList.contains("two")) {
+      setTimeout(()=> {
+        pill.classList.add("piltwoNineThumb")
+        pill.classList.add("imgPilSizeEight")
+
+      },200)
+  
+    } else if(pill.classList.contains("three")) {
+      setTimeout(()=> {
+        pill.classList.add("pilthreeNineThumb")
+        pill.classList.add("imgPilSizeEight")
+
+      },200)
+      
+    } else if(pill.classList.contains("four")) {
+      setTimeout(()=> {
+        pill.classList.add("pilfourNineThumb")
+        pill.classList.add("imgPilSizeEight")
+
+      },200)
+      
+    } else if(pill.classList.contains("five")) {
+      setTimeout(()=> {
+        pill.classList.add("pilfiveNineThumb")
+        pill.classList.add("imgPilSizeEight")
+
+      },200)
+      
+    }  else if(pill.classList.contains("six")) {
+      setTimeout(()=> {
+        pill.classList.add("pilSixNineThumb")
+        pill.classList.add("imgPilSizeEight")
+
+      },200)
+      
+    }  else if(pill.classList.contains("seven")) {
+      setTimeout(()=> {
+        pill.classList.add("pilSevenNineThumb")
+        pill.classList.add("imgPilSizeEight")
+
+      },200)
+     }  else if(pill.classList.contains("eight")) {
+        setTimeout(()=> {
+          pill.classList.add("pilEightNineThumb")
+          pill.classList.add("imgPilSizeEight")
+        },200)
+   }  else if(pill.classList.contains("nine")) {
+          setTimeout(()=> {
+            pill.classList.add("pilNineNineThumb")
+            pill.classList.add("imgPilSizeEight")
+    
+          },200) }
+
+  })
+
+}
+
+
 function showCard(cardName) {
   
   let theCard = document.querySelector("." + cardName);
   let overlay = document.querySelector(`.landMarkCards`);
-
 
 
   if(theCard !== null ) {
@@ -1073,7 +1238,6 @@ function closeCard(cardName) {
   }, 100)
 
 }
-
 
 
 

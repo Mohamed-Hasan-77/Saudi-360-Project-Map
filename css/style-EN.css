@@ -110,6 +110,7 @@ html {
     top: 0;
     width: 100%;
     height: 100%;
+    -webkit-backdrop-filter: blur(6px) brightness(0.5);
     backdrop-filter: blur(6px) brightness(0.5);
 }
 
@@ -138,6 +139,7 @@ html {
     padding: 30px 50px;
     border-radius: 14px;
     background-color: #93939314;
+    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(15px);
     box-shadow: 5px 0px 31px -12px black;
     width: 50%;
@@ -217,9 +219,14 @@ html {
     border: none;
     cursor: pointer;
     border-radius: 14px;
-    background-color: #93939314;
     color: white;
+    /* -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
+    box-shadow: 5px 0px 31px -12px black; */
+
+    background-color: #41414173;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     box-shadow: 5px 0px 31px -12px black;
 }
 
@@ -232,6 +239,7 @@ html {
     border-radius: 14px;
     /* margin: 2px 10px; */
     background-color: #93939314;
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     box-shadow: 5px 0px 31px -12px black;
     overflow: hidden;
@@ -876,7 +884,6 @@ html {
         top: 41%;
         left: 23%;
     }
-
 
     .Najran {
         top: 63%;
@@ -2470,6 +2477,7 @@ html {
     background: var(--mainBack);
     color: white;
     padding: 0.7em 0.9em;
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
@@ -2677,6 +2685,7 @@ html {
     background: var(--mainBack);
     color: white;
     padding: 0.7em 0.9em;
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     display: flex;
     align-items: center;

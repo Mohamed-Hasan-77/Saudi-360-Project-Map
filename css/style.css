@@ -47,8 +47,7 @@ html {
     font-size: 45px;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    /* border-left: 5px solid #ff5622e8; */
-    /* padding-left: 15px; */
+
 }
 
 .sectionTitle .tilteBorder {
@@ -115,11 +114,11 @@ html {
     top: 0;
     width: 100%;
     height: 100%;
+    -webkit-backdrop-filter: blur(6px) brightness(0.5);
     backdrop-filter: blur(6px) brightness(0.5);
 }
 
 .banner .header {
-    /* background-image: linear-gradient(to bottom, rgb(87 34 0 / 28%), rgb(0 0 0 / 28%)), url(../images/globe-1029209_1920.webp); */
     background-image: url(../images/u0.webp);
     background-position: center;
     background-size: cover;
@@ -145,6 +144,7 @@ html {
     /* background-color: #93939314;
     backdrop-filter: blur(15px); */
     background-color: #37373773;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     box-shadow: 5px 0px 31px -12px black;
     width: 50%;
@@ -226,7 +226,8 @@ html {
     /* background-color: #93939314;
     backdrop-filter: blur(15px); */
 
-    background-color: #37373773;
+    background-color: #41414173;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     box-shadow: 5px 0px 31px -12px black;
 }
@@ -239,6 +240,7 @@ html {
     min-width: 200px;
     border-radius: 14px;
     background-color: #37373773;
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     box-shadow: 5px 0px 31px -12px black;
     overflow: hidden;
@@ -2450,6 +2452,7 @@ html {
     background: var(--mainBack);
     color: white;
     padding: 0.7em 0.9em;
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
@@ -2659,6 +2662,7 @@ html {
     background: var(--mainBack);
     color: white;
     padding: 0.7em 0.9em;
+    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     display: flex;
     align-items: center;

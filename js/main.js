@@ -1240,5 +1240,3 @@ function closeCard(cardName) {
 }
 
 
-
-
